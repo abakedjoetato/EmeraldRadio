@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Headphones, User as UserIcon } from 'lucide-react';
+import { Menu, X, Headphones, User as UserIcon, Radio } from 'lucide-react';
 import { usePlayerStore } from '@/store/playerStore';
 import { useAuthStore } from '@/store/authStore';
 import { stationsAPI } from '@/services/api';
