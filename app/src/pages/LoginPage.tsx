@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Radio, Eye, EyeOff, Lock, User } from 'lucide-react';
+import { Eye, EyeOff, Lock, User } from 'lucide-react';
 import { authAPI } from '@/services/api';
 import { useAuthStore } from '@/store/authStore';
 import { toast } from 'sonner';
