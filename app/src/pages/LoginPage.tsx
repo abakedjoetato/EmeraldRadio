@@ -56,7 +56,10 @@ const LoginPage = () => {
             />
             <div className="text-left">
               <h1 className="font-bold text-xl">Emerald</h1>
-              <p className="text-xs text-[#9AA3B2]">Radio</p>
+              <div className="flex items-center gap-1.5">
+                <Radio className="w-3 h-3 text-[#00D084]" />
+                <p className="text-xs text-[#9AA3B2]">Radio</p>
+              </div>
             </div>
           </Link>
           <h2 className="text-2xl font-bold">Welcome Back</h2>
