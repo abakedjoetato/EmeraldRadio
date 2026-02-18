@@ -18,8 +18,7 @@ const missingEnv = requiredEnv.filter(env => !process.env[env]);
 if (missingEnv.length > 0) {
   console.error('CRITICAL ERROR: Missing required environment variables:', missingEnv.join(', '));
   console.error('Please check your .env file in the backend directory.');
-  // In production, we should exit. In development/testing, we might want to continue or mock,
-  // but here it's safer to exit to avoid unhandled promise rejections from mongoose.
+  // Exit to prevent startup without critical configuration
   process.exit(1);
 }
 
