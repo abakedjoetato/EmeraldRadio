@@ -46,7 +46,10 @@ const Footer = () => {
               />
               <div>
                 <h1 className="font-bold text-lg leading-tight">Emerald</h1>
-                <p className="text-xs text-[#9AA3B2]">Radio</p>
+                <div className="flex items-center gap-1.5">
+                  <Radio className="w-3 h-3 text-[#00D084]" />
+                  <p className="text-xs text-[#9AA3B2]">Radio</p>
+                </div>
               </div>
             </Link>
             <p className="text-[#9AA3B2] text-sm max-w-sm mb-6">
