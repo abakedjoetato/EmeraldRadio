@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { User, Mail, Globe, Twitter, Instagram, Youtube, Save, Camera, LogOut, Radio } from 'lucide-react';
+import { User, Globe, Twitter, Instagram, Youtube, Save, Camera, LogOut, Radio } from 'lucide-react';
 import { userAPI } from '@/services/api';
 import { useAuthStore } from '@/store/authStore';
 import { toast } from 'sonner';
