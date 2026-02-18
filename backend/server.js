@@ -28,7 +28,27 @@ app.set('io', io);
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('MongoDB Connected'))
+  .then(async () => {
+    console.log('MongoDB Connected');
+    // Seed default admin if no users exist
+    const { User } = require('./models');
+    try {
+      const userCount = await User.countDocuments();
+      if (userCount === 0) {
+        const adminPassword = process.env.DEFAULT_ADMIN_PASSWORD || 'Admin123!';
+        await User.create({
+          username: 'Emerald',
+          email: 'admin@emeraldradio.com',
+          password: adminPassword,
+          displayName: 'Emerald Admin',
+          role: 'admin'
+        });
+        console.log('Default admin user created (Username: Emerald)');
+      }
+    } catch (err) {
+      console.error('Error seeding admin user:', err);
+    }
+  })
   .catch(err => console.error('MongoDB Connection Error:', err));
 
 // Routes

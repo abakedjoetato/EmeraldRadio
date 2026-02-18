@@ -135,19 +135,22 @@ mongodb+srv://emerald_user:your_password@cluster0.xxxxx.mongodb.net/emerald_radi
 
 ### Option 1: Vercel (Recommended)
 
-1. **Install Vercel CLI**
-   ```bash
-   npm install -g vercel
-   ```
+1. **Deployment Method**
+   - **GitHub Integration**: Connect your repo to Vercel.
+   - **Root Directory**: Set this to `app` in the Vercel project settings. This is crucial because the frontend code is in the `/app` subdirectory.
+   - **Framework Preset**: Vite.
 
-2. **Build and Deploy**
+2. **Manual CLI Deploy**
    ```bash
    cd app
-   npm run build
    vercel --prod
    ```
+   (Vercel will detect Vite and build it automatically).
 
-3. **Configure Environment Variables**
+3. **SPA Routing**
+   A `vercel.json` has been added to the `app` directory to handle client-side routing. This prevents 404 errors when refreshing pages like `/profile`.
+
+4. **Configure Environment Variables**
    - Go to Vercel Dashboard
    - Select your project
    - Go to "Settings" → "Environment Variables"
