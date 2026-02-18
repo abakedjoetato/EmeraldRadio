@@ -65,6 +65,12 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Routes
 const routes = require('./routes');
+
+// Health Check
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'Backend is running' });
+});
+
 app.use('/api', routes);
 
 // Static assets for frontend in production
