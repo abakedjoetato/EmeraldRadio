@@ -10,6 +10,19 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
+
+// Validate Environment Variables
+const requiredEnv = ['MONGODB_URI', 'JWT_SECRET'];
+const missingEnv = requiredEnv.filter(env => !process.env[env]);
+
+if (missingEnv.length > 0) {
+  console.error('CRITICAL ERROR: Missing required environment variables:', missingEnv.join(', '));
+  console.error('Please check your .env file in the backend directory.');
+  // In production, we should exit. In development/testing, we might want to continue or mock,
+  // but here it's safer to exit to avoid unhandled promise rejections from mongoose.
+  process.exit(1);
+}
+
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
