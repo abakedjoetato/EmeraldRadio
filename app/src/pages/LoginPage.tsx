@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Eye, EyeOff, Lock, User } from 'lucide-react';
+import { Eye, EyeOff, Lock, User, Radio } from 'lucide-react';
 import { authAPI } from '@/services/api';
 import { useAuthStore } from '@/store/authStore';
 import { toast } from 'sonner';
@@ -138,15 +138,6 @@ const LoginPage = () => {
           >
             ← Back to Emerald Radio
           </Link>
-        </div>
-
-        {/* Default Credentials Hint */}
-        <div className="mt-8 p-4 bg-[#0F1623] rounded-xl border border-white/10">
-          <p className="text-xs text-[#9AA3B2] text-center">
-            Default admin: <span className="text-[#00D084]">Emerald</span>
-            <br />
-            Password is set via <code className="text-[#2EE9FF]">DEFAULT_ADMIN_PASSWORD</code> env variable
-          </p>
         </div>
       </div>
     </div>
