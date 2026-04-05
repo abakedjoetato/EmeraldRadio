@@ -75,7 +75,7 @@ Platforms like TikTok and Instagram loop audio automatically. A professional Son
   - Hook: `I'm the light, I'm the sun, and I've only just begun!`
 - **Template: The "Dark Truth" Melancholy**
   - Style: `[Whispered Indie] [Acoustic Guitar] [Melancholic]`
-  - Hook: `... the world is loud, and i am small ...`
+  - Hook: `  the world is loud, and i am small  `
 - **Template: The "Hype Beast" Phonk**
   - Style: `[Aggressive Phonk] [Deep Bass] [Distorted]`
   - Hook: `Watch me drift, watch me move, I've got nothing left to prove.`

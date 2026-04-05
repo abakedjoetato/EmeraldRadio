@@ -34,7 +34,7 @@ To create a "Beat-Switch" (popular in modern Hip-Hop):
 3. Suno v5.5 is excellent at maintaining the "Sonic Fiber" of the track while completely shifting the genre and energy.
 
 ### Chapter 3: The "In-Painting" Workflow (Precision Editing)
-*Note: This feature is rolling out to specific regions/users in v5.5.*
+
 
 #### 3.1 Correcting Vocal Glitches
 If a single word is "mumbled" or "hallucinated":
@@ -61,7 +61,7 @@ You can use "Directives" inside the lyric field that are not tags but "Probabili
 
 - **Repeating Words:** `the beat, the beat, the beat` forces the AI to focus on rhythmic repetition.
 - **Phonetic Spelling:** Use `eye luv yoo` instead of `I love you` to force a specific vowel inflection or accent.
-- **Spacing:** `I..... love..... you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
+- **Spacing:** `I .. love .. you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
 
 ### Chapter 6: The Elite "Mastering" Chain (Post-Suno)
 To make your Suno output sound "Radio Ready," use this mastering chain in your DAW:

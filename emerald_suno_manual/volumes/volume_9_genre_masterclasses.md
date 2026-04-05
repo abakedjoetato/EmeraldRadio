@@ -6,7 +6,7 @@ In Suno v5.5, EDM is no longer just about a "beat"; it is about "Dynamic Texture
 
 #### 1.1 Engineering the "Drop"
 The most critical part of an EDM track is the transition from the build-up to the drop. Suno often "blurs" this transition if the prompt is too generic.
-- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use `...` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
+- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use ` ` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
 - **Stacking Filters:** Use `[Low-pass Filter Build]` followed by `[High-pass Filter Release]` in the style prompt to simulate a professional DJ transition.
 
 #### 1.2 Sub-Genre Nuances

@@ -218,5 +218,5 @@ These tags control the "Tone," "Performance," and "Mix" of the instruments.
 200. `[Underwater Effect]` | Heavily filtered, "liquid" sound.
 
 ---
-*(Note: Remaining 200 tags continued in Volume 4 Part 2)*
+
 *(The total will exceed 400 unique tags including Atmosphere, Intensity, Performance Cues, and Genre-Specific Modifiers)*

@@ -150,7 +150,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Periods ( . ):** Induce a longer pause and a definitive "cadence" or drop in pitch. It signals the completion of a musical thought.
 - **Exclamation Marks ( ! ):** Increase vocal intensity, "attack," and often triggers a "chest voice" performance rather than a "head voice."
 - **Question Marks ( ? ):** Induce an upward "inflection" or "rising tone" at the end of the line. Essential for emotional delivery in ballads.
-- **Ellipses ( ... ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
+- **Ellipses ( ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
 - **Dashes ( - ):** Can be used to "stretch" a syllable or indicate a sudden interruption in the vocal flow.
 - **Line Breaks (Enter):** Represent natural phrasing breaks. Excessive line breaks can lead to a "choppy" performance, while no line breaks can lead to "rushed" vocals.
 
@@ -161,7 +161,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Emphasized:** "I LOVE the way you MOVE." (The AI will stress the capitalized words, often hitting them harder on the downbeat).
 - **Extreme (SHOUTING):** "I LOVE THE WAY YOU MOVE!" (Can trigger a transition from singing to shouting or "belted" vocals).
 
-**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `... i, think, i, love, you ...`. Combine this with the style tag `[Whispered Vocals]`.
+**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `"i, think, i, love, you"`. Combine this with the style tag `[Whispered Vocals]`.
 
 ### Chapter 3: Advanced Structure Forcing (The Bracket System)
 Brackets `[ ]` are the command line of Suno. They do not appear in the song; they tell the "Arranger" what to do next. They are the "Director's Cues" in your sonic film.
@@ -539,7 +539,7 @@ These tags control the "Tone," "Performance," and "Mix" of the instruments.
 200. `[Underwater Effect]` | Heavily filtered, "liquid" sound.
 
 ---
-*(Note: Remaining 200 tags continued in Volume 4 Part 2)*
+
 *(The total will exceed 400 unique tags including Atmosphere, Intensity, Performance Cues, and Genre-Specific Modifiers)*
 # Volume 4 (Part 2): The Meta Tag Master Database
 ## Emerald Sonic Architecture (v5.5)
@@ -1017,7 +1017,7 @@ This library contains 200+ unique prompts. Every prompt demonstrates a different
     - **Why it works:** Reimagines "Misirlou" style vibes with modern Suno fidelity.
 
 ---
-*(Prompts 51-200 continued in Part 2 and 3 of the Prompt Library)*
+
 *(Every following prompt will continue to explore unique technical and stylistic combinations as per the 200+ requirement)*
 # Volume 5 (Part 2): The Professional Prompt Library
 ## Emerald Sonic Architecture (v5.5)
@@ -1028,124 +1028,377 @@ These prompts focus on specific "Mechanical" tricks within the Suno engine.
 51. **[The Pure Vocal Isolation]**
     - **Style:** `[Acapella] [Dry Vocals] [Male Baritone] [Spoken Word] [Monologue]`
     - **Structure:** `[Verse: Clear Diction] [Chorus: Intimate Voice]`
-    - **Goal:** For creating "Capture" quality dry vocals for later cloning or remixing.
+    - **Explanation:** Designed for creating "Capture" quality dry vocals for later cloning or remixing. By specifying "Monologue" and "Acapella," you force the model to ignore harmonic backing.
 
 52. **[The ASMR Binaural Texture]**
     - **Style:** `[ASMR] [Whispered] [Nature Sounds] [Ethereal] [Binaural] [3D Audio]`
     - **Structure:** `[Intro: Rain] [Verse: Gentle Whispering] [Outro: Crinkle Sounds]`
-    - **Goal:** Testing the "Stereo Image" and spatial placement capabilities of v5.5.
+    - **Explanation:** Tests the "Stereo Image" and spatial placement capabilities of v5.5. The "Binaural" tag biases the output toward wide panning and subtle phase shifts.
 
 53. **[The Reverse Audio Illusion]**
     - **Style:** `[Reverse Audio] [Ambient Pad] [Sucking Sound] [Slow] [Mysterious]`
     - **Structure:** `[Verse: Backwards Piano] [Chorus: Swelling Tones]`
-    - **Goal:** Inducing "Latent Hallucination" where the AI attempts to "undo" its own generation.
+    - **Explanation:** Induces "Latent Hallucination" where the AI attempts to "undo" its own generation. This creates unique, "sucking" textures often used in cinematic sound design.
 
 54. **[The Bitcrushed Glitch-Hop]**
     - **Style:** `[Bitcrushed] [Glitch Percussion] [Synthesized Female Vocal] [Lo-fi]`
     - **Structure:** `[Verse: Broken Beat] [Drop: Digital Static] [Solo: 8-bit]`
-    - **Goal:** Forcing the model into "Lo-fi Digital" rather than "Lo-fi Analog" territory.
+    - **Explanation:** Forces the model into "Lo-fi Digital" rather than "Lo-fi Analog" territory. The "Bitcrushed" tag introduces aliasing artifacts intentionally.
 
 55. **[The Poly-Metric Stress Test]**
     - **Style:** `[Polyrhythmic] [11/8 Time] [Clean Electric Guitar] [Technical Jazz]`
     - **Structure:** `[Verse: Clashing Rhythms] [Chorus: Harmonic Release]`
-    - **Goal:** Proving the engine's ability to maintain complex mathematical timing.
+    - **Explanation:** Proving the engine's ability to maintain complex mathematical timing. The "11/8" tag acts as a weight shifter for the rhythmic transformer.
 
 56. **[The Extreme Dynamic Swell]**
     - **Style:** `[Crescendo] [Orchestral] [Cinematic] [High Dynamic Range]`
     - **Structure:** `[Verse: Ppp Quietest] [Pre-Chorus: Rising Swell] [Chorus: Fff Loudest]`
-    - **Goal:** Utilizing Italian musical terms (pianissimo, fortissimo) to influence gain control.
+    - **Explanation:** Utilizes Italian musical terms (pianissimo, fortissimo) to influence gain control. v5.5 responds better to these theoretical anchors than simple "Loud/Quiet."
 
 57. **[The "Radio Static" Narrative]**
     - **Style:** `[Distorted Radio Vocal] [Vinyl Crackle] [40s Jazz] [Antique]`
     - **Structure:** `[Intro: Scanning Dial] [Verse: Muffled Song] [Outro: White Noise]`
-    - **Goal:** Creating a "Found Footage" or "Historical" audio aesthetic.
+    - **Explanation:** Creates a "Found Footage" or "Historical" audio aesthetic. The "Antique" tag applies a band-pass filter consistent with mid-century broadcasting.
 
 58. **[The Vocal Harmony Wall]**
     - **Style:** `[Gospel Choir] [12-Voice Harmony] [Anthemic] [Acapella Soul]`
     - **Structure:** `[Intro: Humming] [Chorus: Massive Harmonic Explosion]`
-    - **Goal:** Maximizing the "Vocal Transformer" density.
+    - **Explanation:** Maximizing the "Vocal Transformer" density. Specifying the number of voices (e.g., 12-voice) forces the model to generate multiple concurrent pitch tracks.
 
 59. **[The Stutter-Edit Master]**
     - **Style:** `[Stutter Edit] [IDM] [Glitchy] [Hectic] [Hyperpop]`
     - **Structure:** `[Verse: Chopped Vocals] [Chorus: Rapid Repeats]`
-    - **Goal:** Simulating manual "Slice and Dice" production techniques.
+    - **Explanation:** Simulating manual "Slice and Dice" production techniques. The "Stutter Edit" tag triggers rapid micro-loops of the generated audio.
 
 60. **[The "Unplugged" Acoustic Session]**
     - **Style:** `[Acoustic Guitar] [Live Room Reverb] [Breathy Male Vocal] [Intimate]`
     - **Structure:** `[Intro: Finger Squeaks] [Verse: Simple Chords] [Chorus: Soulful]`
-    - **Goal:** Inducing "Organic Imperfections" (string squeaks, chair creaks).
+    - **Explanation:** Induces "Organic Imperfections" like string squeaks and chair creaks by using "Live" and "Intimate" anchors.
 
----
-*(Prompts 61-125 summarized by Concept - Each fully expanded in the master file)*
+61. **[The Underwater Ballad]**
+    - **Style:** `[Low-pass Filter] [Muffled] [High Reverb] [Slow] [Acoustic Piano]`
+    - **Structure:** `[Intro: Liquid SFX] [Verse: Submerged Melody] [Outro: Bubbling]`
+    - **Explanation:** Focuses the spectral weight on the low end. The "Low-pass" tag effectively "muffles" the high frequencies above 2kHz.
 
-61. **[The Underwater Ballad]:** Low-pass filter focus.
-62. **[The Screaming Void]:** Maximum distortion + White noise background.
-63. **[The Clockwork Orchestra]:** Rhythmic "tick-tock" percussion focus.
-64. **[The Whispering Forest]:** Wind and leaf rustle sounds integrated into the rhythm.
-65. **[The Industrial Heartbeat]:** Deep, muffled rhythmic "thud" simulating a heart.
-66. **[The Cyber-Gregorian]:** Vocoder + Monastic Chant intersection.
-67. **[The Glitch-Folk]:** Acoustic guitar with digital "errors" interrupting the melody.
-68. **[The Dream-Logic]:** Unexpected genre shifts every 30 seconds.
-69. **[The Melancholic Robot]:** Monotone synth voice + sad piano chords.
-70. **[The High-Energy Workout]:** Consistent 160 BPM, sidechain compression focus.
-71. **[The Lo-fi Study Beat]:** Muffled drums + nostalgic Rhodes piano.
-72. **[The Epic Fantasy Theme]:** Large brass, choir, and cinematic percussion.
-73. **[The Dark Cabaret Waltz]:** Accordion, minor-key piano, theatrical vocals.
-74. **[The Psychedelic 60s]:** Phased guitars, sitar, and "trippy" panning.
-75. **[The Modern Opera]:** Trap beats under traditional soprano arias.
-76. **[The Cowboy in Space]:** Pedal steel guitar with cosmic synth pads.
-77. **[The 8-Bit Death Metal]:** Chiptune leads with blast beat drumming.
-78. **[The Soulful Synth]:** Warm analog pads with R&B style vocal ad-libs.
-79. **[The Minimalist Techno]:** Single repetitive synth line with gradual evolution.
-80. **[The Orchestral Grunge]:** 90s distorted guitars with a full string section.
-81. **[The Jazz-Drill]:** Swing-style piano over heavy drill sliding bass.
-82. **[The Tropical Goth]:** Marimbas and steel drums in a minor, spooky key.
-83. **[The Punk-Polka]:** Fast tuba and accordion with aggressive vocals.
-84. **[The Ambient Industrial]:** Slow mechanical drones and clangs.
-85. **[The Bubblegum Trap]:** Hyper-bright melodies over aggressive percussion.
-86. **[The Celtic Cyberpunk]:** Bagpipes with distorted industrial synths.
-87. **[The Flamenco Hip-Hop]:** Hand-claps and Spanish guitar as a beat.
-88. **[The Baroque Reggae]:** Harpsichord performing a laid-back skank.
-89. **[The Shoegaze Soul]:** Wall of sound guitars over a Motown groove.
-90. **[The Bluegrass DnB]:** 174 BPM breaks with fast banjo picking.
-91. **[The Opera-Rock]:** Queen-style multi-layered operatic vocals over rock.
-92. **[The Vaporwave Jazz]:** Slowed down, reverb-drenched jazz standards.
-93. **[The Math-Metal]:** Complex technical time signatures with harsh vocals.
-94. **[The Folk-Trance]:** Acoustic melodies with rolling psychedelic basslines.
-95. **[The Industrial Tango]:** Violent mechanical rhythms with dramatic violin.
-96. **[The Lo-fi Metal]:** Muffled, dusty black metal with a chill beat.
-97. **[The Cinematic Funk]:** 70s spy-movie horn sections with a modern slap bass.
-98. **[The Ethereal Drill]:** Airy, cloud-like pads over aggressive rap beats.
-99. **[The Blues-Step]:** 12-bar blues structure with dubstep growl bass.
-100. **[The Gregorian Disco]:** Chanted vocals over a four-on-the-floor beat.
-101. **[The Acid-Country]:** 303 squelch synths with a pedal steel melody.
-102. **[The Koto-Core]:** Traditional Japanese instruments with heavy breakdowns.
-103. **[The Synthwave Sea Shanty]:** Electronic hooks with pirate-style group vocals.
-104. **[The Math-Pop]:** Catchy hooks in 7/4 and 5/4 time signatures.
-105. **[The Gothic Samba]:** Dark, minor-key Latin rhythms with spooky vocals.
-106. **[The Afrobeat Grunge]:** Syncopated African percussion with muddy guitars.
-107. **[The Industrial Bossa]:** Smooth Latin rhythms played by machines.
-108. **[The Cinematic Trap]:** Epic orchestral swells leading into heavy bass.
-109. **[The 90s Boy Band Metal]:** Harmonized pop vocals over thrash riffs.
-110. **[The Lo-fi Opera]:** Muffled, intimate aria in a bedroom setting.
-111. **[The Tribal Hyperpop]:** Primitive drums with pitch-shifted modern vocals.
-112. **[The Dark Folk Dub]:** Acoustic guitars with heavy echo and sub-bass.
-113. **[The Synth-Punk]:** 80s arcade sounds with aggressive 70s energy.
-114. **[The Orchestral Ska]:** Full brass section playing upbeat skank rhythms.
-115. **[The Psychedelic Blues]:** Sitar and fuzz-guitar call and response.
-116. **[The Math-Rock Gospel]:** Tapping guitars with a soulful church choir.
-117. **[The Industrial Bluegrass]:** Banjo with distorted clangs and rhythmic noise.
-118. **[The Vaporwave Metal]:** Slowed, dreamy distorted riffs and muffled drums.
-119. **[The Cinematic Surf]:** Large scale strings with twangy 60s guitars.
-120. **[The Lo-fi Hyperpop]:** Soft, muffled, pitch-shifted emotional pop.
-121. **[The Tribal Techno]:** Primal drumming with repetitive hypnotic synths.
-122. **[The Dark Cabaret Hip-Hop]:** Accordion and dramatic vocals over boom-bap.
-123. **[The Ethereal Metalcore]:** Soaring airy vocals with heavy chugging.
-124. **[The Jazz-Step]:** Complex jazz piano with high-energy dubstep drops.
-125. **[The Orchestral Trap]:** High-end violins over low-end 808s.
+62. **[The Screaming Void]**
+    - **Style:** `[Maximum Distortion] [White Noise] [Aggressive Vocals] [Extreme Metal]`
+    - **Structure:** `[Verse: Chaotic Noise] [Chorus: Wall of Screams] [Outro: Static]`
+    - **Explanation:** Pushes the model toward "Audio Chaos." This is useful for creating soundscapes for horror or industrial settings.
 
----
-*(Prompts 126-200 continued in Part 3 - Focusing on Viral Loops, Case Study Replications, and Advanced Emotion Engineering)*
+63. **[The Clockwork Orchestra]**
+    - **Style:** `[Mechanical Ticking] [Staccato Strings] [Woodblock Percussion] [Rhythmic]`
+    - **Structure:** `[Intro: Solo Ticking] [Verse: Synchronized Strings] [Chorus: Grand Machinery]`
+    - **Explanation:** Uses percussive onomatopoeia as a stylistic anchor. "Ticking" forces a 120 BPM metronomic feel.
+
+64. **[The Whispering Forest]**
+    - **Style:** `[Wind SFX] [Rustling Leaves] [Ethereal Vocals] [Soft Acoustic]`
+    - **Structure:** `[Intro: Nature Sounds] [Verse: Breathless Delivery] [Outro: Silence]`
+    - **Explanation:** Integrates environmental sounds into the musical rhythm. The model attempts to find a "Harmonic Match" for the noise of the wind.
+
+65. **[The Industrial Heartbeat]**
+    - **Style:** `[Rhythmic Thud] [60 BPM] [Muffled Industrial] [Slow Drone]`
+    - **Structure:** `[Intro: Lone Heartbeat] [Verse: Mechanical Pulse] [Chorus: Heavy Clang]`
+    - **Explanation:** Creates a primal, biological rhythm using mechanical sounds. Explicitly stating "60 BPM" aligns the "thud" with a human heart rate.
+
+66. **[The Cyber-Gregorian]**
+    - **Style:** `[Vocoder] [Gregorian Chant] [Synthesized Monks] [Futuristic]`
+    - **Structure:** `[Intro: Distorted Latin] [Chorus: Electronic Unison] [Outro: Digital Fade]`
+    - **Explanation:** The intersection of ancient tradition and futuristic processing. The "Vocoder" tag forces the vocal generator to adopt a harmonic synth carrier.
+
+67. **[The Glitch-Folk]**
+    - **Style:** `[Acoustic Guitar] [Digital Stutter] [Lo-fi] [Intimate] [Folk]`
+    - **Structure:** `[Verse: Fingerstyle] [Chorus: Glitchy Interruption] [Solo: Broken Melody]`
+    - **Explanation:** Introduces "Modern Failure" into a traditional genre. It challenges the model to bridge high-fidelity acoustic samples with digital artifacts.
+
+68. **[The Dream-Logic Montage]**
+    - **Style:** `[Surreal] [Unexpected Genre Shifts] [Ambient] [Cinematic] [Slow]`
+    - **Structure:** `[0:00 Piano] [0:30 Industrial] [1:00 Orchestral] [1:30 Jazz]`
+    - **Explanation:** Uses extension-based prompting to force the AI to pivot stylistically. It mimics the disjointed flow of a dream.
+
+69. **[The Melancholic Robot]**
+    - **Style:** `[Monotone Synth Voice] [Sad Minor Piano] [Slow] [Minimalist]`
+    - **Structure:** `[Verse: Flat Delivery] [Chorus: Melodic Beeps] [Outro: Low Power]`
+    - **Explanation:** Explores the "Uncanny Valley" of emotion. The flat vocal performance contrasts with the emotional piano chords.
+
+70. **[The High-Energy Workout Anchor]**
+    - **Style:** `[160 BPM] [Sidechain Compression] [Aggressive Kick] [Dance-Pop]`
+    - **Structure:** `[Intro: Constant Beat] [Chorus: Maximum Intensity] [Drop: High Energy]`
+    - **Explanation:** Focuses on "Pumping" energy. The "Sidechain" tag tells the model to duck instruments whenever the kick drum hits.
+
+71. **[The Lo-fi Study Beat]**
+    - **Style:** `[Dusty Samples] [Muffled Drums] [Fender Rhodes] [Vinyl Crackle] [Chill]`
+    - **Structure:** `[Verse: Jazzy Piano Loop] [Chorus: Minimal Percussion] [Outro: Record Stop]`
+    - **Explanation:** The classic "Study Girl" aesthetic. Focuses on consistency and low-frequency "warmth" to avoid distracting the listener.
+
+72. **[The Epic Fantasy World]**
+    - **Style:** `[Huge Orchestral Brass] [Celestial Choir] [Epic Cinematic Percussion] [Heroic]`
+   - **Structure:** `[Intro: Fanfare] [Verse: Rising Strings] [Chorus: Grandiose Theme]`
+   - **Explanation:** Designed for high-scale world-building. Uses "Brass" as the anchor for a "Royal" feel.
+
+73. **[The Dark Cabaret Waltz]**
+    - **Style:** `[Accordion] [Staccato Piano] [Minor Key] [Theatrical Male Vocal] [3/4 Time]`
+    - **Structure:** `[Intro: Circus Waltz] [Verse: Storytelling] [Chorus: Orchestral Swell]`
+    - **Explanation:** Forces a 3/4 meter. The "Accordion" and "Minor Key" combination creates a "Sinister Circus" atmosphere.
+
+74. **[The Psychedelic 60s Trip]**
+    - **Style:** `[Phased Guitars] [Sitar] [Trippy Panning] [60s Rock] [Harmonized]`
+    - **Structure:** `[Intro: Swirling Sitar] [Verse: Fuzz Guitar] [Chorus: Dreamy Vocals]`
+    - **Explanation:** Uses modulation effects (Phase/Flanger) to simulate the era's hardware limitations and creative experimentation.
+
+75. **[The Modern Trap Opera]**
+    - **Style:** `[Soprano Vocal] [Deep 808 Bass] [Trap Drums] [Dramatic] [Aggressive]`
+    - **Structure:** `[Intro: Solo Aria] [Verse: Rhythmic Bass] [Chorus: Opera over Trap]`
+    - **Explanation:** A "High-Art/Low-End" mashup. The contrast between the high frequency of the soprano and the low frequency of the 808 creates immense sonic space.
+
+76. **[The Cowboy in Space]**
+    - **Style:** `[Pedal Steel Guitar] [Cosmic Synth Pads] [Vast Reverb] [Slow] [Country]`
+    - **Structure:** `[Intro: Lonley Whistle] [Verse: Drifting Guitar] [Outro: Star Field]`
+    - **Explanation:** Reimagines Americana in a futuristic setting. The "Pedal Steel" provides the "human" country anchor.
+
+77. **[The 8-Bit Death Metal]**
+    - **Style:** `[Square Wave Leads] [Blast Beats] [Growled Vocals] [Chiptune] [Fast]`
+    - **Structure:** `[Verse: Digital Shredding] [Chorus: Chaotic Noise] [Solo: 8-bit Arp]`
+    - **Explanation:** Juxtaposes the "cuteness" of arcade sounds with the extreme aggression of death metal.
+
+78. **[The Soulful Analog Synth]**
+    - **Style:** `[Warm Analog Pads] [R&B Ad-libs] [Slow Jam Beat] [Smooth] [70s]`
+    - **Structure:** `[Intro: Moog Bass] [Verse: Velvety Vocal] [Chorus: Harmonic Release]`
+    - **Explanation:** Focuses on "Warmth" and "Saturation." The analog tags bias the model toward "drifting" pitch oscillators.
+
+79. **[The Minimalist Techno Pulse]**
+    - **Style:** `[909 Kick] [Resonant Filter Sweep] [Repetitive] [Clinical] [128 BPM]`
+    - **Structure:** `[Intro: Beat Only] [Verse: Bass Entry] [Chorus: Filter Open]`
+    - **Explanation:** A technical exercise in restraint. The "Filter Sweep" tag commands the model to gradually introduce high frequencies.
+
+80. **[The Orchestral Grunge Anthem]**
+    - **Style:** `[Full String Section] [Muddy Distorted Guitar] [90s Vocals] [Dynamic]`
+    - **Structure:** `[Intro: Cello Solo] [Verse: Acoustic] [Chorus: Strings + Distortion]`
+    - **Explanation:** Gives the "Rage" of grunge a sophisticated, cinematic weight.
+
+81. **[The Jazz-Drill Fusion]**
+    - **Style:** `[Swing Piano] [Sliding Drill Bass] [Rhythmic Rap] [Sophisticated] [Fast]`
+    - **Structure:** `[Intro: Bebop Lick] [Hook: Heavy Bass Entry] [Verse: Jazz Chords]`
+    - **Explanation:** Blends the harmonic complexity of jazz with the aggressive rhythmic delivery of modern drill.
+
+82. **[The Tropical Gothic Spooks]**
+    - **Style:** `[Marimbas] [Minor Key] [Steel Drums] [Spooky Vocals] [Slow]`
+    - **Structure:** `[Intro: Jungle Night] [Verse: Tense Steel Drums] [Chorus: Haunting Melody]`
+    - **Explanation:** Creates a "Sinister Holiday" vibe. The "Marimba" provides a wooden, skeletal texture.
+
+83. **[The Punk-Polka Chaos]**
+    - **Style:** `[Fast Tuba] [Accordion] [Aggressive Shouted Vocals] [Upbeat] [Punk]`
+    - **Structure:** `[Intro: Tuba Solo] [Verse: Skank Rhythm] [Chorus: Violent Celebration]`
+    - **Explanation:** High-speed energy using non-traditional "Aggressive" instruments like the Tuba.
+
+84. **[The Ambient Industrial Factory]**
+    - **Style:** `[Mechanical Drones] [Steam Hiss] [Slow Metal Clangs] [Cold] [Minimal]`
+    - **Structure:** `[Intro: Low Hum] [Verse: Engine Rhythm] [Outro: Distant Hammer]`
+    - **Explanation:** A sound design piece. It treats "Noise" as a melodic instrument.
+
+85. **[The Bubblegum Trap Neon]**
+    - **Style:** `[Hyper-Bright Synths] [Trap Beats] [High-Pitched Female Vocal] [Neon]`
+    - **Structure:** `[Intro: Cute melody] [Verse: Bouncy] [Chorus: Explosive Hook]`
+    - **Explanation:** Maximum algorithmic catchiness. The "Hyper-Bright" tag pushes the upper frequencies to the limit.
+
+86. **[The Celtic Cyberpunk Bagpipes]**
+    - **Style:** `[Bagpipes] [Industrial Synths] [Distorted Percussion] [Epic] [Fast]`
+    - **Structure:** `[Intro: Pipe Drone] [Chorus: Digital Wall] [Solo: Celtic Shred]`
+    - **Explanation:** Blends the relentless "drone" of the bagpipes with the "drone" of industrial techno.
+
+87. **[The Flamenco Hip-Hop Beat]**
+    - **Style:** `[Hand-Claps] [Nylon String Guitar] [Boom Bap Beat] [Spanish] [Syncopated]`
+    - **Structure:** `[Intro: Fast Guitar] [Hook: Rhythmic Clapping] [Verse: Flamenco Groove]`
+    - **Explanation:** Uses the "Palmas" (hand-claps) of flamenco as the primary snare/percussion replacement.
+
+88. **[The Baroque Reggae Skank]**
+    - **Style:** `[Harpsichord] [Laid-back Reggae Beat] [Deep Bass] [Classical] [Relaxed]`
+    - **Structure:** `[Intro: Trill] [Verse: Harpsichord Skank] [Chorus: Melodic String Rise]`
+    - **Explanation:** Juxtaposes the "Stiff" precision of the harpsichord with the "Loose" swing of reggae.
+
+89. **[The Shoegaze Motown Soul]**
+    - **Style:** `[Wall of Sound Guitars] [Motown Vocal Harmonies] [Groovy] [Dense] [60s]`
+    - **Structure:** `[Intro: Harmonic Swell] [Verse: Soul Melody] [Chorus: Sonic Chaos]`
+    - **Explanation:** Reimagines 1960s soul through a 1990s shoegaze lens. Focuses on "Harmonic Density."
+
+90. **[The Bluegrass DnB Breaks]**
+    - **Style:** `[Fast Banjo] [174 BPM Breakbeats] [Deep Bass] [Hectic] [Folk]`
+    - **Structure:** `[Intro: Solo Banjo] [Build: Rising Strings] [Drop: Extreme Breaks]`
+    - **Explanation:** A high-speed technical challenge for the model. Blends "Pickin'" speed with "Programming" speed.
+
+91. **[The Queen-Style Opera Rock]**
+    - **Style:** `[Multi-Layered Vocals] [Grand Piano] [Distorted Guitar Solo] [Theatrical]`
+    - **Structure:** `[Intro: Choral Wall] [Verse: Piano Ballad] [Chorus: Epic Rock]`
+    - **Explanation:** Focuses on "Vocal Multi-tracking." The model attempts to simulate a 48-track vocal session.
+
+92. **[The Vaporwave Jazz Standard]**
+    - **Style:** `[Slowed Saxophone] [Heavy Reverb] [VHS Hiss] [Muzak] [Nostalgic]`
+    - **Structure:** `[Intro: Tape Warp] [Verse: Muffled Jazz] [Outro: Slow Fade]`
+    - **Explanation:** An exercise in "Aesthetic Degradation." The "VHS Hiss" tag introduces mid-range noise.
+
+93. **[The Math-Metal Time Warp]**
+    - **Style:** `[Technical Time Signatures] [Aggressive Vocals] [Complex] [Heavy Metal]`
+    - **Structure:** `[Verse: 7/8 Riff] [Chorus: 5/4 Change] [Solo: Poly-metric]`
+    - **Explanation:** Forces the model to abandon the standard 4/4 grid. This often results in more "Creative" drum fills.
+
+94. **[The Folk-Trance Transcendence]**
+    - **Style:** `[Acoustic Guitar] [Rolling Psytrance Bass] [Ethereal Vocals] [Cosmic]`
+    - **Structure:** `[Intro: Folk Jam] [Build: Rising Synth] [Drop: Tribal Rave]`
+    - **Explanation:** Blends the "Humanity" of folk with the "Hypnosis" of trance.
+
+95. **[The Industrial Tango Death]**
+    - **Style:** `[Accordion] [Mechanical Clang Beat] [Dramatic Male Vocal] [Tense]`
+    - **Structure:** `[Intro: Tango Staccato] [Verse: Factory Rhythm] [Chorus: Violent Tango]`
+    - **Explanation:** An elegant dance performed in a steel mill. The "Staccato" tag is essential for the tango feel.
+
+96. **[The Lo-fi Black Metal Dusty]**
+    - **Style:** `[Extremely Muffled] [Distant Screams] [Acoustic Guitar] [Desolate]`
+    - **Structure:** `[Intro: Wind] [Chorus: Distant Chaos] [Outro: Static]`
+    - **Explanation:** Captures the "Basement Tape" feel of early 90s Norwegian metal. It intentionally sacrifices fidelity for "Aura."
+
+97. **[The Cinematic Funk Spy]**
+    - **Style:** `[70s Brass Section] [Slap Bass] [Wah-wah Guitar] [Action] [Heroic]`
+    - **Structure:** `[Intro: Horn Stab] [Verse: Tense Bass] [Chorus: Chase Theme]`
+    - **Explanation:** Designed for a cinematic "Chase Scene." Focuses on rhythmic "Stabs" and high-energy horns.
+
+98. **[The Ethereal Drill Cloud 2]**
+    - **Style:** `[Whispered Rap] [Airy Pads] [Deep Sliding Bass] [Dreamy] [Modern]`
+    - **Structure:** `[Hook: Soaring Pad] [Verse: Quiet Rap] [Outro: Faded Echo]`
+    - **Explanation:** A softer version of drill. The "Whispered" tag creates an intimate, almost ASMR-like rap delivery.
+
+99. **[The Blues-Step Growl]**
+    - **Style:** `[12-Bar Blues] [Wobble Bass] [Slide Guitar] [Gravelly Vocal] [Hectic]`
+    - **Structure:** `[Verse: Delta Blues] [Pre-Chorus: Rising Drive] [Drop: Dubstep Blues]`
+    - **Explanation:** Reimagines the sorrow of the blues through the "Filth" of dubstep.
+
+100. **[The Gregorian Disco Party]**
+     - **Style:** `[Monastic Chant] [Four-on-the-Floor] [Disco Strings] [Sacred] [Euphoric]`
+     - **Structure:** `[Intro: Organ Drone] [Chorus: Disco Groove] [Solo: Church Organ]`
+     - **Explanation:** Spiritual reverence meets 1970s dancefloor infectiousness.
+
+101. **[The Acid-Country Squelch 2]**
+     - **Style:** `[303 Synth] [Pedal Steel Guitar] [Shuffle Rhythm] [Psychedelic] [110 BPM]`
+     - **Structure:** `[Intro: Synth Bubbles] [Verse: Country melody] [Chorus: Acid Squelch]`
+     - **Explanation:** A technical texture test. Blends the resonant filter of the 303 with the sliding pitch of the pedal steel.
+
+102. **[The Koto-Core Breakdown]**
+     - **Style:** `[Koto] [Heavy Metal Breakdowns] [Double-Kick] [Technical] [Japanese]`
+     - **Structure:** `[Intro: Zen Koto] [Verse: Fast Riffing] [Chorus: Crushing Breakdown]`
+     - **Explanation:** Blends the delicate plucked strings of Japan with the violent intensity of metalcore.
+
+103. **[The Synthwave Sea Shanty Neon]**
+     - **Style:** `[Neon 80s Synths] [Group Male Vocals] [Rhythmic Stomp] [Anthemic]`
+     - **Structure:** `[Verse: Nautical Story] [Chorus: Electronic Hook] [Outro: Sea Ambience]`
+     - **Explanation:** Pirate traditions meet futuristic highways. The "Group Vocals" tag is key for the shanty feel.
+
+104. **[The Math-Pop Earworm]**
+     - **Style:** `[7/4 Time] [Catchy Pop Hook] [Clean Tapping Guitar] [Bouncy] [Bright]`
+     - **Structure:** `[Intro: Complex Riff] [Verse: Pop Melody] [Chorus: 7/4 Groove]`
+     - **Explanation:** Proves that complex time signatures can still be "Pop" and accessible.
+
+105. **[The Gothic Samba Darkness]**
+     - **Style:** `[Dark Piano] [Minor Key Latin Rhythm] [Spooky Vocals] [Ominous]`
+     - **Structure:** `[Intro: Rain] [Verse: Tense Samba] [Chorus: Haunting Melody]`
+     - **Explanation:** A macabre dance. Blends the high-energy "Swing" of Samba with a funeral atmosphere.
+
+106. **[The Afrobeat Grunge Hybrid]**
+     - **Style:** `[Complex African Percussion] [Muddy Distorted Guitar] [Raw Vocals]`
+     - **Structure:** `[Intro: Rhythmic Loop] [Verse: Grunge Riff] [Chorus: Dense Mashup]`
+     - **Explanation:** Maintains the "Groove" of Lagos within the "Sludge" of Seattle.
+
+107. **[The Industrial Bossa Machine]**
+     - **Style:** `[Smooth Latin Rhythm] [Mechanical Clangs] [Smooth Female Vocal] [Cold]`
+     - **Structure:** `[Verse: Traditional Bossa] [Chorus: Factory Noises] [Outro: Static]`
+     - **Explanation:** A "Lounge" song performed by an assembly line. The contrast creates a unique "Store Background" feel.
+
+108. **[The Cinematic Trap Epic]**
+     - **Style:** `[Huge Orchestral Swell] [Deep 808 Bass] [Epic Choir] [Action] [Anthemic]`
+     - **Structure:** `[Intro: Tense Strings] [Build: Fast Percussion] [Drop: Epic Trap]`
+     - **Explanation:** Designed for high-end movie trailers. Blends the "Scale" of Hollywood with the "Impact" of Atlanta trap.
+
+109. **[The 90s Boy Band Metal]**
+     - **Style:** `[Harmonized Pop Vocals] [Thrash Metal Riffs] [Fast] [Polished] [Aggressive]`
+     - **Structure:** `[Intro: Cute Harmony] [Verse: Metal Shredding] [Chorus: Pop-Metal Mashup]`
+     - **Explanation:** Maximum sonic confusion. Blends the "Innocence" of boy bands with the "Violence" of thrash metal.
+
+110. **[The Lo-fi Opera Intimacy]**
+     - **Style:** `[Muffled Piano] [Distant Soprano] [Vinyl Crackle] [Bedroom Ambience]`
+     - **Structure:** `[Intro: Record Static] [Verse: Intimate Aria] [Outro: Faded Echo]`
+     - **Explanation:** A "Sacred" vocal performed in a very "Mundane" lo-fi setting.
+
+111. **[The Tribal Hyperpop Bouncy]**
+     - **Style:** `[Log Drums] [Pitch-Shifted Vocals] [Hyperactive Synths] [Bouncy] [Bright]`
+     - **Structure:** `[Intro: Primitive Beat] [Verse: Digital chaos] [Chorus: High-Pitched Hook]`
+     - **Explanation:** Blends the oldest instruments (drums) with the newest vocal processing (pitch-shifting).
+
+112. **[The Dark Folk Dub]**
+     - **Style:** `[Acoustic Guitar] [Heavy Tape Echo] [Deep Sub-Bass] [Mournful] [Dub]`
+     - **Structure:** `[Intro: Lone Guitar] [Verse: Echoing Vocal] [Outro: Bass Drone]`
+     - **Explanation:** Reimagines "Lonesome" folk through the prism of Jamaican dub production.
+
+113. **[The Synth-Punk Arcade]**
+     - **Style:** `[80s Arcade Sounds] [Aggressive Punk Vocals] [Fast] [Hectic] [Neon]`
+     - **Structure:** `[Intro: Game Start] [Verse: Punk Beat] [Chorus: Digital Chaos]`
+     - **Explanation:** High-speed energy. The "Arcade" tag triggers square and triangle wave melodies.
+
+114. **[The Orchestral Ska Party]**
+     - **Style:** `[Full Brass Section] [Upbeat Skank Rhythm] [Heroic] [Grandiose] [Ska]`
+     - **Structure:** `[Intro: Horn Fanfare] [Verse: Orchestral Skank] [Chorus: Anthemic Lift]`
+     - **Explanation:** Elevates the "Party" energy of Ska to the scale of a symphony.
+
+115. **[The Psychedelic Blues Sitar]**
+     - **Style:** `[Sitar] [Fuzz Guitar] [Call-and-Response] [Trippy] [Slow] [Blues]`
+     - **Structure:** `[Intro: Sitar Drone] [Verse: Delta Blues] [Solo: Psych Mashup]`
+     - **Explanation:** A bridge between Eastern tradition and Western sorrow. The "Call-and-Response" tag is essential.
+
+116. **[The Math-Rock Gospel Choir 2]**
+     - **Style:** `[Clean Tapping Guitar] [Huge Choir] [11/8 Time] [Euphoric] [Anthemic]`
+     - **Structure:** `[Intro: Complex Riff] [Verse: Minimal] [Chorus: Massive Release]`
+     - **Explanation:** A variation focusing on "Release." The choir is used as a "Wall of Sound."
+
+117. **[The Industrial Bluegrass Banjo]**
+     - **Style:** `[Fast Banjo] [Distorted Clangs] [Rhythmic Noise] [Aggressive] [Rustic]`
+     - **Structure:** `[Intro: Solo Banjo] [Verse: Industrial rhythm] [Chorus: Violent Folk]`
+     - **Explanation:** Blends the "Staccato" of the banjo with the "Staccato" of mechanical noise.
+
+118. **[The Vaporwave Metal Sunset]**
+     - **Style:** `[Slowed Distorted Riffs] [Muffled Drums] [VHS Hiss] [Dreamy] [Metal]`
+     - **Structure:** `[Intro: Tape Warp] [Verse: Dreamy Chaos] [Outro: Slow Fade]`
+     - **Explanation:** Reimagines extreme metal as a nostalgic, degraded memory.
+
+119. **[The Cinematic Surf Twang]**
+     - **Style:** `[Large Scale Strings] [Twangy 60s Guitar] [Epic Swell] [Summer] [Surf]`
+     - **Structure:** `[Intro: Ocean Sounds] [Verse: Surf Riff] [Chorus: Orchestral Lift]`
+     - **Explanation:** Hollywood-scale surf music. The "Twangy" tag is essential for the guitar's character.
+
+120. **[The Lo-fi Hyperpop Emotional]**
+     - **Style:** `[Soft Muffled Vocals] [Pitch-shifted] [Vinyl Crackle] [Melancholic] [Pop]`
+     - **Structure:** `[Intro: Record Static] [Verse: Intimate Pop] [Chorus: Sad Hook]`
+     - **Explanation:** Humanizes the "Robotic" nature of hyperpop by placing it in a lo-fi bedroom setting.
+
+121. **[The Tribal Techno Hypnosis]**
+     - **Style:** `[Primal Drumming] [Repetitive Synths] [Hypnotic] [Techno] [128 BPM]`
+     - **Structure:** `[Intro: Lone Drum] [Verse: Bass Entry] [Chorus: Synth Layering]`
+     - **Explanation:** Designed for a trance-like dancefloor experience. Focuses on "Gradual Evolution."
+
+122. **[The Dark Cabaret Hip-Hop Noir]**
+     - **Style:** `[Accordion] [Dramatic Vocals] [Boom Bap Beat] [Noir] [Spooky]`
+     - **Structure:** `[Intro: Rain] [Verse: Circus Rapping] [Chorus: Operatic Sample]`
+     - **Explanation:** Narrates a "Street Story" through the lens of a sinister traveling circus.
+
+123. **[The Ethereal Metalcore Soaring]**
+     - **Style:** `[Airy Soaring Vocals] [Heavy Guitar Chugging] [Blast Beats] [Dreamy]`
+     - **Structure:** `[Intro: Spacey Pad] [Chorus: Violent Explosion] [Bridge: Melodic]`
+     - **Explanation:** A "Beauty and the Beast" contrast. The vocals remain ethereal even during the heaviest sections.
+
+124. **[The Jazz-Step Dub Piano]**
+     - **Style:** `[Complex Jazz Piano] [High-Energy Dubstep Drop] [Hectic] [Fusion]`
+     - **Structure:** `[Verse: Solo Piano] [Build: Rising Keys] [Drop: Electronic Filth]`
+     - **Explanation:** A technical challenge for the model. It requires the AI to shift from acoustic piano to aggressive synth growls.
+
+125. **[The Orchestral Trap 808s]**
+     - **Style:** `[High-end Violins] [Low-end 808 Bass] [Dramatic] [Cinematic] [Trap]`
+     - **Structure:** `[Intro: Tense Strings] [Hook: Modern Rhythm] [Outro: Faded Resolve]`
+     - **Explanation:** Focuses on "Frequency Separation." The strings carry the melody while the 808s carry the energy.
 # Volume 5 (Part 3): The Professional Prompt Library
 ## Emerald Sonic Architecture (v5.5)
 
@@ -1162,11 +1415,12 @@ These prompts focus on specific "Mechanical" tricks within the Suno engine.
       Watch me shine, watch me move,
       I've got nothing to lose!
       ```
-    - **Why it works:** Short, repetitive, relatable "self-empowerment" lyrics designed for short-form video.
+    - **Why it works:** Short, repetitive, relatable "self-empowerment" lyrics designed for short-form video. The "Explosive" tag provides a clear editing point.
 
 127. **[The "BBL Drizzy" Parody Replication]**
     - **Style:** `[70s Soul] [Sampled Texture] [High-Pitched Male Vocal] [Vinyl Crackle]`
-    - **Why it works:** Replicates the "pitch-shifted soul sample" aesthetic that went viral in 2024.
+    - **Lyrics:** `[Chorus] (Pitch-shifted soul sample loop) I'm just living my life, yeah `
+    - **Why it works:** Replicates the "pitch-shifted soul sample" aesthetic. The "Sampled Texture" tag is key to inducing that crate-digger feel.
 
 128. **[The "Ironic" Meme Song - Heavy Metal Version]**
     - **Style:** `[Death Metal] [Blast Beats] [Aggressive Vocals] [Growled Lyrics]`
@@ -1175,96 +1429,363 @@ These prompts focus on specific "Mechanical" tricks within the Suno engine.
 
 129. **[The Lo-fi "Study Girl" Loop]**
     - **Style:** `[Lo-fi Hip Hop] [Rhodes Piano] [Muffled Drums] [Rain Ambience]`
-    - **Goal:** Creating a "vibe" that remains consistently pleasant for hours of looping.
+    - **Lyrics:** `[Instrumental]`
+    - **Why it works:** Focuses on background consistency. The "Rain Ambience" tag fills the mid-range frequencies without being intrusive.
 
 130. **[The "Cinematic Transition" for Vlogs]**
     - **Style:** `[Swoosh Sound] [Orchestral Hit] [Low Drones] [Tense]`
-    - **Goal:** Forcing the AI to create functional audio assets rather than full songs.
+    - **Lyrics:** `[Instrumental]`
+    - **Why it works:** Forcing the AI to create functional audio assets. Short generation length (10-15s) is best here.
 
 131. **[The "Sad Indie" Whisper Hook]**
     - **Style:** `[Whispered Female Vocals] [Acoustic Guitar] [Breathy] [Melancholic]`
-    - **Lyrics:** `... it's fine, i'm fine, we're all fine ...`
-    - **Goal:** Capturing the "relatable heartbreak" niche of TikTok.
+    - **Lyrics:** `  it is fine, i am fine, we are all fine  `
+    - **Why it works:** Capturing the "relatable heartbreak" niche. The ellipses in the lyrics induce a hesitant, emotional delivery.
 
 132. **[The "Aggressive Gym" Motivation Track]**
     - **Style:** `[Phonk] [Cowbell] [Aggressive Bass] [Distorted Vocals] [High BPM]`
-    - **Goal:** High-energy "Sigma" or workout-style content.
+    - **Lyrics:** `[Hook] One more rep, one more set, haven't seen the finish yet.`
+    - **Why it works:** High-energy "Sigma" style content. The "Cowbell" tag is a genre-essential anchor for Phonk.
 
----
-*(Prompts 133-200 - Each targeting a specific viral sub-genre or technical nuance)*
+133. **[The Hyper-Pop Earworm]**
+     - **Style:** `[High-pitched Pitch-shifted Vocals] [Distorted 808s] [Hyperactive Synths] [Neon]`
+     - **Lyrics:** `[Chorus] (Fast) Candy, sugar, diamond rings, I love all the shiny things!`
+     - **Why it works:** Extreme vocal processing and high-speed energy create an "unnatural" but catchy sound.
 
-133. **[The Hyper-Pop Earworm]:** Maximum pitch-shifting and energy.
-134. **[The Dark Academia Piano]:** Minor key, complex classical solo.
-135. **[The Cottagecore Folk]:** Warm, acoustic, nature-focused lyrics.
-136. **[The Cyberpunk "Rave" Scene]:** Industrial techno, heavy neon vibes.
-137. **[The "POV" Storytelling Rap]:** Narrative focus, clear conversational flow.
-138. **[The ASMR Whispering Rap]:** Intimate, high-frequency focus.
-139. **[The Epic "Game Over" Theme]:** Sad, fading orchestral resolution.
-140. **[The "Victory" Fanfare]:** Short, bright, triumphant brass.
-141. **[The Horror Movie "Jump-Scare"]:** Rising dissonance followed by a loud bang.
-142. **[The "Chill" Vaporwave Remix]:** Slowed, reverb-drenched 80s pop.
-143. **[The Goth-Country Ballad]:** "Southern Gothic" dark storytelling.
-144. **[The Retro-Futuristic Ad]:** 50s voiceover style with synth-wave music.
-145. **[The Shamanic Ritual]:** Chanting, wooden percussion, deep drones.
-146. **[The High-Speed Chase]:** Tense rhythmic strings and electronic drums.
-147. **[The Peaceful "Minecraft" Vibe]:** Soft piano and celeste, minimal.
-148. **[The Aggressive "Boss Music"]:** Heavy metal + Choir, epic scale.
-149. **[The "Whimsical" Tavern Song]:** Accordion, group vocals, drinking song.
-150. **[The Ethereal Space Walk]:** Long synth swells, no percussion.
-151. **[The Glitch-Hop Breakdance]:** Broken beats, stuttering vocals.
-152. **[The "Nostalgic" Childhood Theme]:** Simple melody, warm tones, high reverb.
-153. **[The Dark-Electro Drill]:** Industrial textures with sliding rap bass.
-154. **[The Modern "Sea Shanty"]:** Group harmonies with a heavy rock beat.
-155. **[The Hyper-Fast Metal Solo]:** Maximum technical shredding focus.
-156. **[The "Rainy Day" Jazz]:** Brushed drums, muted trumpet, rain SFX.
-157. **[The Uplifting "Corporate" Track]:** Clean, safe, high-fidelity acoustic.
-158. **[The "Spooky" Music Box]:** Tense, high-pitched mechanical bells.
-159. **[The Aggressive "Phonk" Drift]:** Distorted bass, cowbell, Memphis rap.
-160. **[The "Dreamy" Synth-Pop]:** 80s vibes, soft vocals, arpeggios.
-161. **[The Tribal "War Dance"]:** Heavy percussion, chanted vocal hooks.
-162. **[The "Classy" Noir Jazz]:** Upright bass, saxophone, smoke atmosphere.
-163. **[The "Future-Bass" Drop]:** Swelling synths, sidechain compression.
-164. **[The "Old-Timey" Radio News]:** Muffled, high-pass filter, monotone voice.
-165. **[The "Intense" Hack Scene]:** Fast-paced electronic, glitchy textures.
-166. **[The "Sad" Piano Solo]:** Minor chords, slow tempo, high-emotional weight.
-167. **[The "Aggressive" Rap Battle]:** High energy, clear diction, heavy beats.
-168. **[The "Peaceful" Garden]:** Harp, birds chirping, acoustic melody.
-169. **[The "Tense" Stealth Game]:** Low-frequency drones, occasional metal clangs.
-170. **[The "Epic" World-Building]:** Orchestral + Traditional world instruments.
-171. **[The "Glitchy" Robot Love Song]:** Synthesized vocals, digital errors.
-172. **[The "Deep" House Groove]:** 4-on-the-floor, soul vocal samples.
-173. **[The "Gritty" Desert Rock]:** Slide guitar, dusty drums, raw vocals.
-174. **[The "Bright" Morning Vibe]:** High frequencies, major key, fast-paced.
-175. **[The "Dark" Techno Rave]:** Repetitive, heavy bass, industrial filters.
-176. **[The "Soothing" Lullaby]:** Soft bells, very slow tempo, airy.
-177. **[The "High-Stakes" Poker Game]:** Jazz brushes, tense upright bass.
-178. **[The "Magical" Transformation]:** Arpeggios, celesta, swelling strings.
-179. **[The "Aggressive" Viking Folk]:** War horns, deep drums, shouted chants.
-180. **[The "Lo-fi" Hip-Hop Beat]:** Vinyl crackle, dusty piano, boom-bap.
-181. **[The "Anthemic" Stadium Rock]:** Big snare, crowd cheers, high energy.
-182. **[The "Mysterious" Forest Path]:** Flute, distant bells, ambient pads.
-183. **[The "Fast" Euro-Beat]:** 160 BPM, synth leads, high-energy vocals.
-184. **[The "Melancholic" Space Travel]:** Distant synths, slow, minor key.
-185. **[The "Groovy" 70s Disco]:** Strings, wah-guitar, four-on-the-floor.
-186. **[The "Industrial" Factory Scene]:** Clangs, bangs, mechanical rhythms.
-187. **[The "Dreamy" Shoegaze Cloud]:** Maximum reverb, muffled vocals.
-188. **[The "Aggressive" Cyber-Punk]:** Distorted synths, fast drums, dark.
-189. **[The "Soft" Acoustic Ballad]:** Simple guitar, emotional clear vocals.
-190. **[The "Hectic" Glitch-Core]:** Total digital chaos, high speed.
-191. **[The "Noble" Royal Theme]:** Brass-heavy, major key, majestic.
-192. **[The "Rustic" Farm Scene]:** Banjo, fiddle, nature sounds.
-193. **[The "Tropical" Beach Party]:** Steel drums, upbeat, bright.
-194. **[The "Sinister" Clown Music]:** Accordion, minor key, zany.
-195. **[The "Epic" Space Battle]:** Orchestral + Synthetic, huge scale.
-196. **[The "Sad" Violin Solo]:** High emotion, tremolo, minor key.
-197. **[The "Aggressive" Breakcore]:** Extreme speed, sampled breaks, chaotic.
-198. **[The "Peaceful" Zen Garden]:** Koto, water sounds, minimal.
-199. **[The "Intense" Psychological Horror]:** Rising drones, high-pitched scratching.
-200. **[The "Ultimate" Emerald Masterpiece]:** A blend of all technical categories.
+134. **[The Dark Academia Piano Solo]**
+     - **Style:** `[Acoustic Grand Piano] [Minor Key] [Complex Classical Solo] [Pensive]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Induces technical classical performance. Use "Solo" tags to prevent the AI from adding unwanted drums.
 
----
-**Total Prompts Cataloged: 200.**
-**Final Pro-Tip:** The "Remix" feature in v5.5 is your best friend. Take any of these prompts, generate a result, and if the "Vibe" is right but the "Melody" is wrong, use Remix with **Low Variability** to keep the sound while changing the tune.
+135. **[The Cottagecore Folk Lullaby]**
+     - **Style:** `[Acoustic Guitar] [Nature Sounds] [Soft Female Vocal] [Warm] [Rustic]`
+     - **Lyrics:** `[Verse] Green leaves, mountain breeze, living life with perfect ease.`
+     - **Why it works:** Focuses on "Aesthetic" memory. The "Rustic" tag ensures an unpolished, organic sound.
+
+136. **[The Cyberpunk "Rave" Scene]**
+     - **Style:** `[Industrial Techno] [Acid Synths] [Heavy Neon Vibes] [Hectic] [135 BPM]`
+     - **Lyrics:** `[Hook] (Distorted) Digital skin, digital sin, the simulation is beginning.`
+     - **Why it works:** Blends mechanical clangs with high-energy rave elements.
+
+137. **[The "POV" Storytelling Rap]**
+     - **Style:** `[90s Boom Bap Beat] [Clear Diction Male Vocal] [Lyrical] [Narrative]`
+     - **Lyrics:** `[Verse] So I'm walking to the store, minding my own business, then I saw `
+     - **Why it works:** Prioritizes vocal clarity. The "Clear Diction" tag prevents mumble rap influences.
+
+138. **[The ASMR Whispering Rap]**
+     - **Style:** `[Whispered Vocals] [Intimate] [High-Frequency Focus] [Deep Sub-Bass]`
+     - **Lyrics:** `  listen closely, hear the sound, of the world spinning round  `
+     - **Why it works:** Intimacy triggers a physical response. High contrast between the whisper and the deep bass.
+
+139. **[The Epic "Game Over" Theme]**
+     - **Style:** `[Sad Orchestral] [Fading Resolve] [Minor Key] [Cinematic]`
+     - **Lyrics:** `[Instrumental] [Outro: Fading Tail]`
+     - **Why it works:** Designed for a specific functional payoff in gaming content.
+
+140. **[The "Victory" Fanfare]**
+     - **Style:** `[Bright Triumphant Brass] [Short] [Major Key] [Heroic]`
+     - **Lyrics:** `[Instrumental] [Ending: Big Finish]`
+     - **Why it works:** Provides instant "Success" feedback for the listener.
+
+141. **[The Horror Movie "Jump-Scare"]**
+     - **Style:** `[Rising Dissonance] [Sudden Loud Metallic Bang] [Tense] [Ominous]`
+     - **Lyrics:** `[Instrumental] [Transition: Sudden EXPLOSION]`
+     - **Why it works:** A technical exercise in dynamic range. The "Dissonance" tag creates tension that is resolved by noise.
+
+142. **[The "Chill" Vaporwave Remix]**
+     - **Style:** `[Slowed Down 80s Pop] [Heavy Hall Reverb] [VHS Hiss] [Dreamy]`
+     - **Lyrics:** `[Chorus] (Muffled) Feeling so good, just like I should `
+     - **Why it works:** Replicates the "Slowed + Reverb" trend. The "VHS Hiss" tag adds nostalgic texture.
+
+143. **[The Goth-Country Ballad]**
+     - **Style:** `[Baritone Guitar] [Deep Grave Vocals] [Southern Gothic] [Dark Storytelling]`
+     - **Lyrics:** `[Verse] The crows are in the cornfield, the sun is going down `
+     - **Why it works:** Blends the "Aura" of goth with the "Grit" of country.
+
+144. **[The Retro-Futuristic Ad]**
+     - **Style:** `[1950s Voiceover Style] [Synthwave Music] [Anthemic] [Upbeat]`
+     - **Lyrics:** `[Monologue] In the world of tomorrow, you'll need the tech of today!`
+     - **Why it works:** Juxtaposes a historical vocal style with futuristic music.
+
+145. **[The Shamanic Ritual]**
+     - **Style:** `[Deep Chanting] [Wooden Percussion] [Low Drones] [Ancient] [Primal]`
+     - **Lyrics:** `[Chant] (Repetitive syllables) Ha-oh, ha-eh, ha-oh `
+     - **Why it works:** Focuses on "Trance-like" repetition. The "Wooden" tag ensures an earthy percussive tone.
+
+146. **[The High-Speed Chase]**
+     - **Style:** `[Fast Rhythmic Strings] [Electronic Drums] [160 BPM] [Tense] [Action]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Designed for cinematic pacing. The strings provide the constant "Drive."
+
+147. **[The Peaceful "Minecraft" Vibe]**
+     - **Style:** `[Soft Solo Piano] [Celesta] [Minimalist] [Gentle] [Airy]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** High "Pleasantness" factor. The Celesta provides a magical, child-like sparkle.
+
+148. **[The Aggressive "Boss Music"]**
+     - **Style:** `[Heavy Metal] [Dark Latin Choir] [Epic Scale] [Aggressive] [Fast]`
+     - **Lyrics:** `[Chorus] (Latin Chanting) Dies Irae, Gloria, Victoria!`
+     - **Why it works:** Maximizes sonic density. The Latin choir adds a sense of "Unstoppable Power."
+
+149. **[The "Whimsical" Tavern Song]**
+     - **Style:** `[Accordion] [Group Male Vocals] [Rhythmic Stomp] [Playful] [Drinking Song]`
+     - **Lyrics:** `[Verse] Raise your glass and sing a song, we'll be here all night long!`
+     - **Why it works:** Designed for social "Vibe" content. The "Group Vocals" tag is essential for the sing-along feel.
+
+150. **[The Ethereal Space Walk]**
+     - **Style:** `[Long Evolving Synth Swells] [No Percussion] [Celestial Pads] [Vast]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Removes the "Rhythmic Anchor," allowing the listener to float in the audio space.
+
+151. **[The Glitch-Hop Breakdance]**
+     - **Style:** `[Broken Beat] [Stuttering Vocals] [Funky Bass] [Glitchy] [Modern]`
+     - **Lyrics:** `[Hook] Move, mo-mo-move your feet, feel the glitchy beat.`
+     - **Why it works:** Uses digital "errors" as a rhythmic foundation for dancing.
+
+152. **[The "Nostalgic" Childhood Theme]**
+     - **Style:** `[Music Box] [Simple Melodic Piano] [Warm Tones] [High Reverb]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Triggers "Aesthetic" memory. The "Music Box" tag provides a fragile, crystalline tone.
+
+153. **[The Dark-Electro Drill]**
+     - **Style:** `[Industrial Synths] [Sliding Rap Bass] [Aggressive Male Vocal] [Drill]`
+     - **Lyrics:** `[Hook] Sliding through the city, no pity, yeah it's gritty.`
+     - **Why it works:** Brings the harshness of industrial music to the street-level energy of drill.
+
+154. **[The Modern "Sea Shanty"]**
+     - **Style:** `[Group Harmonies] [Heavy Rock Beat] [Anthemic] [Nautical]`
+     - **Lyrics:** `[Chorus] Oh the wind is in the sails and the sun is on the sea!`
+     - **Why it works:** Reinvigorates a traditional format with modern rock production energy.
+
+155. **[The Hyper-Fast Metal Solo]**
+     - **Style:** `[Maximum Technical Shredding] [High-Speed Electric Guitar] [Blast Beats]`
+     - **Lyrics:** `[Instrumental] [Solo: Virtuoso Shred]`
+     - **Why it works:** A stress test for the model's "Note Speed" capability.
+
+156. **[The "Rainy Day" Jazz]**
+     - **Style:** `[Brushed Drums] [Muted Trumpet] [Rain SFX] [Slow] [Smooth Jazz]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Creates a self-contained "Mood." The "Brushed" tag ensures soft, non-intrusive percussion.
+
+157. **[The Uplifting "Corporate" Track]**
+     - **Style:** `[Clean Acoustic Guitar] [Safe Upbeat Piano] [High-Fidelity] [Corporate]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Designed for commercial background use. Avoids any "Edgy" harmonic choices.
+
+158. **[The "Spooky" Music Box]**
+     - **Style:** `[Tense Mechanical Bells] [Out-of-tune Piano] [Ominous] [Slow]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Uses subtle pitch drift (detuning) to create a sense of "Wrongness" or unease.
+
+159. **[The Aggressive "Phonk" Drift]**
+     - **Style:** `[Distorted Memphis Rap Sample] [Cowbell] [Deep Bass] [Phonk]`
+     - **Lyrics:** `[Chorus] (Distorted) Drift through the night, yeah I'm winning the fight.`
+     - **Why it works:** Captures the signature sound of car-culture virality.
+
+160. **[The "Dreamy" Synth-Pop]**
+     - **Style:** `[80s Arpeggio] [Soft Airy Vocals] [Gated Reverb Snare] [Dreamy]`
+     - **Lyrics:** `[Verse] Riding on the waves of light, everything will be alright.`
+     - **Why it works:** Uses 1980s nostalgia as an emotional shortcut.
+
+161. **[The Tribal "War Dance"]**
+     - **Style:** `[Heavy Log Drums] [Chanted Vocal Hooks] [Primal] [Energetic]`
+     - **Lyrics:** `[Hook] (Group Shout) HEY! HO! HEY! HO!`
+     - **Why it works:** Designed for high-impact social media clips. Primal rhythms are universally engaging.
+
+162. **[The "Classy" Noir Jazz]**
+     - **Style:** `[Upright Bass] [Expressive Saxophone Solo] [Smoke Atmosphere] [Slow]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Focuses on "Timbre" and "Vibe." The "Expressive" tag helps the AI mimic human vibrato.
+
+163. **[The "Future-Bass" Drop]**
+     - **Style:** `[Swelling Super-Saw Synths] [Sidechain Compression] [High Energy]`
+     - **Lyrics:** `[Build] Rising  rising  [Drop] (Pitch-shifted vocal chop)`
+     - **Why it works:** Uses rhythmic volume ducking (Sidechain) to create a "Breathing" synth texture.
+
+164. **[The "Old-Timey" Radio News]**
+     - **Style:** `[Muffled Voice] [High-pass Filter] [Monotone Speech] [Static] [1940s]`
+     - **Lyrics:** `[Monologue] This is the news of the hour, coming to you live from the capital!`
+     - **Why it works:** Induces a specific historical "Narrow-band" audio quality.
+
+165. **[The "Intense" Hack Scene]**
+     - **Style:** `[Frantic Electronic Sequences] [Glitchy Textures] [160 BPM] [Cold]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Rhythmic complexity and high speed simulate the "Digital Stress" of a hacker trope.
+
+166. **[The "Sad" Piano Solo]**
+     - **Style:** `[Minor Key Chords] [Slow Tempo] [High Emotional Weight] [Acoustic Piano]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Minimalist focus. The "Weight" tag tells the model to favor lower-velocity (quieter) piano strikes.
+
+167. **[The "Aggressive" Rap Battle]**
+     - **Style:** `[High Energy Beat] [Clear Diction Rap] [Heavy 808s] [Aggressive]`
+     - **Lyrics:** `[Verse] I'm the king of the ring, you're just a puppet on a string!`
+     - **Why it works:** Focuses on "Attack." The lyrics should have hard consonants (K, T, P) for best results.
+
+168. **[The "Peaceful" Garden Ambient]**
+     - **Style:** `[Harp] [Birds Chirping] [Soft Melodic Piano] [Nature] [Gentle]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** High "Nature" factor. Bird sounds are used as a non-musical harmonic layer.
+
+169. **[The "Tense" Stealth Game]**
+     - **Style:** `[Low-frequency Drones] [Occasional Metal Clangs] [Mysterious] [Quiet]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Focuses on "Silence" and "Expectation." The clangs act as sudden auditory alerts.
+
+170. **[The "Epic" World-Building Anthem]**
+     - **Style:** `[Full Orchestra] [Traditional World Instruments] [Heroic] [Grandiose]`
+     - **Lyrics:** `[Chorus] (Group Vocals) We will rise, under these skies!`
+     - **Why it works:** Blends classical European scale with ethnic instrument textures.
+
+171. **[The "Glitchy" Robot Love Song]**
+     - **Style:** `[Synthesized Vocals] [Digital Errors] [Square-wave Melody] [Cute]`
+     - **Lyrics:** `[Verse] My circuits are glowing, my data is flowing, for you.`
+     - **Why it works:** Humanizes technology. The "Errors" tag adds intentional digital grit.
+
+172. **[The "Deep" House Groove]**
+     - **Style:** `[4-on-the-floor Beat] [Soul Vocal Samples] [Warm Sub-Bass] [Club]`
+     - **Lyrics:** `[Hook] (Sampled) Feel the rhythm, moving through your soul.`
+     - **Why it works:** Prioritizes the "Groove." The kick drum is the metronomic anchor.
+
+173. **[The "Gritty" Desert Rock]**
+     - **Style:** `[Slide Guitar] [Dusty Acoustic Drums] [Raw Vocals] [Western]`
+     - **Lyrics:** `[Verse] I've been walking this road, for a thousand years or more.`
+     - **Why it works:** Focuses on "Dryness." Avoids heavy reverb to maintain a "Sun-baked" sound.
+
+174. **[The "Bright" Morning Vibe]**
+     - **Style:** `[High Frequencies] [Major Key] [Fast-paced Acoustic] [Positive]`
+     - **Lyrics:** `[Chorus] The sun is up, the coffee's hot, give it everything you've got!`
+     - **Why it works:** High energy + high frequency = instant "Wake up" energy.
+
+175. **[The "Dark" Techno Rave]**
+     - **Style:** `[Repetitive Heavy Bass] [Industrial Filters] [130 BPM] [Ominous]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Focuses on "Hypnosis" and physical impact. The filters provide the variation.
+
+176. **[The "Soothing" Lullaby]**
+     - **Style:** `[Soft Bells] [Very Slow Tempo] [Airy Pads] [Gentle]`
+     - **Lyrics:** `[Verse] Close your eyes, reach for the stars, leave behind all your scars.`
+     - **Why it works:** High "Sleepiness" factor. Removes any sudden transients (sharp sounds).
+
+177. **[The "High-Stakes" Noir Poker]**
+     - **Style:** `[Jazz Brushes] [Tense Upright Bass] [Muted Trumpet] [Noir]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Creates a narrative of "Risk" through instrumentation alone.
+
+178. **[The "Magical" Transformation]**
+     - **Style:** `[Arpeggios] [Celesta] [Swelling Orchestral Strings] [Fantasy]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Designed for visual "reveal" moments. The Celesta provides the "Magic Dust."
+
+179. **[The "Aggressive" Viking Folk]**
+     - **Style:** `[War Horns] [Deep Log Drums] [Shouted Chants] [Primal]`
+     - **Lyrics:** `[Hook] (Group Shout) VALHALLA! WE ARE COMING!`
+     - **Why it works:** High-impact "Aura" music. Perfect for "Sigma" or historical content.
+
+180. **[The "Lo-fi" Hip-Hop Beat 2]**
+     - **Style:** `[Vinyl Crackle] [Dusty Melodic Piano] [Boom-Bap Beat] [Lo-fi]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** The quintessential "Chill" vibe. The "Dusty" tag adds mid-range saturation.
+
+181. **[The "Anthemic" Stadium Rock]**
+     - **Style:** `[Large Snare Drum] [Crowd Cheers] [Overdriven Guitar] [High Energy]`
+     - **Lyrics:** `[Chorus] (Group Vocals) We won't back down, we'll take the town!`
+     - **Why it works:** Simulates a live performance. The "Crowd Cheers" tag adds atmospheric scale.
+
+182. **[The "Mysterious" Forest Path]**
+     - **Style:** `[Distant Flute] [Soft Bells] [Ambient Pads] [Eerie]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Focuses on "Ambiguity." The minor/major shifts create a sense of the unknown.
+
+183. **[The "Fast" Euro-Beat]**
+     - **Style:** `[160 BPM] [Hyper-Bright Synth Leads] [High-Energy Female Vocal] [Fast]`
+     - **Lyrics:** `[Chorus] (Fast) Supercharged and ready to go, watch me put on a show!`
+     - **Why it works:** Pure adrenaline. The high BPM forces the AI into a "Frenzied" performance state.
+
+184. **[The "Melancholic" Space Travel]**
+     - **Style:** `[Distant Synth Swells] [Slow Tempo] [Minor Key] [Vast]`
+     - **Lyrics:** `[Verse] Floating in the dark, just a tiny little spark.`
+     - **Why it works:** Captures the "Loneliness" of science fiction. Focuses on spatial depth.
+
+185. **[The "Groovy" 70s Disco]**
+     - **Style:** `[Disco Strings] [Wah-wah Guitar] [Four-on-the-floor Beat] [Euphoric]`
+     - **Lyrics:** `[Chorus] Dance the night away, until the break of day!`
+     - **Why it works:** High "Physicality" factor. The "Wah-wah" tag provides the rhythmic "Quack."
+
+186. **[The "Industrial" Factory Scene]**
+     - **Style:** `[Rhythmic Mechanical Clangs] [Steam Hiss] [Engine Drones] [Cold]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** A "Functional" soundscape. It treats mechanical noise as a percussive suite.
+
+187. **[The "Dreamy" Shoegaze Cloud]**
+     - **Style:** `[Maximum Guitar Reverb] [Muffled Vocals] [Wall of Noise] [Dense]`
+     - **Lyrics:** `[Chorus] (Buried in mix) I'm lost in the sound, nowhere to be found.`
+     - **Why it works:** Prioritizes "Texture" over "Melody." The vocals are treated as just another instrument layer.
+
+188. **[The "Aggressive" Cyber-Punk 2]**
+     - **Style:** `[Distorted Synths] [Fast Industrial Drums] [Gravelly Vocals] [Dark]`
+     - **Lyrics:** `[Hook] Break the code, hit the road, heavy is the load.`
+     - **Why it works:** High-energy rebellion. The "Distorted" tag pushes the model's gain to the limit.
+
+189. **[The "Soft" Acoustic Ballad]**
+     - **Style:** `[Simple Nylon Guitar] [Emotional Clear Male Vocal] [Intimate] [Slow]`
+     - **Lyrics:** `[Verse] I'm sorry for the things I said, they're playing in my head.`
+     - **Why it works:** Focuses on "Sincerity." The "Nylon" tag provides a warmer, softer string tone than steel.
+
+190. **[The "Hectic" Glitch-Core]**
+     - **Style:** `[Total Digital Chaos] [High Speed] [Bitcrushed Vocals] [Fast]`
+     - **Lyrics:** `[Hook] (Glitchy) G-g-g-get out of my way, I've got things to say!`
+     - **Why it works:** Designed for maximum sensory overload. The "Chaos" tag removes stylistic constraints.
+
+191. **[The "Noble" Royal Theme]**
+     - **Style:** `[Brass-Heavy] [Major Key Orchestral] [Majestic] [Heroic]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** High "Prestige" factor. Uses brass unisons to create a sense of authority.
+
+192. **[The "Rustic" Farm Scene]**
+     - **Style:** `[Banjo] [Fiddle] [Nature Sounds] [Earthy] [Upbeat]`
+     - **Lyrics:** `[Verse] Sun is coming up, pour a little in the cup.`
+     - **Why it works:** High "Warmth" factor. The "Earthy" tag ensures a lo-fi, acoustic fidelity.
+
+193. **[The "Tropical" Beach Party]**
+     - **Style:** `[Steel Drums] [Upbeat Bouncy Bass] [Bright] [Summer Vibes]`
+     - **Lyrics:** `[Chorus] Salt in the air, sand in my hair, I don't have a care!`
+     - **Why it works:** Maximum algorithmic "Happy" energy. The "Steel Drums" provide the instant location anchor.
+
+194. **[The "Sinister" Clown Music]**
+     - **Style:** `[Accordion] [Minor Key Waltz] [Zany SFX] [Ominous]`
+     - **Lyrics:** `[Verse] Welcome to the show, where the dark shadows grow.`
+     - **Why it works:** Uses "Zany" sounds (horns, bells) in a minor key to create "Uncanny" dread.
+
+195. **[The "Epic" Space Battle]**
+     - **Style:** `[Orchestral + Synthetic Mashup] [Huge Percussion] [High Tension]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Designed for cinematic climaxes. Blends "Human" strings with "Alien" synths.
+
+196. **[The "Sad" Violin Solo]**
+     - **Style:** `[High Emotional Weight] [Tremolo Strings] [Minor Key] [Solo]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Focuses on "Human" performance. The "Tremolo" tag induces an emotional, wavering string bow.
+
+197. **[The "Aggressive" Breakcore Break]**
+     - **Style:** `[Extreme Speed] [Sampled Drum Breaks] [Chaotic] [Hectic]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** A technical stress test for rhythmic complexity. Uses fast, overlapping snare samples.
+
+198. **[The "Peaceful" Zen Garden]**
+     - **Style:** `[Koto] [Water Sounds] [Minimalist] [Meditative] [Slow]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Designed for long-form relaxation. High "Focus" factor.
+
+199. **[The "Intense" Psychological Horror]**
+     - **Style:** `[Rising Dissonant Drones] [High-pitched Scratching] [Tense]`
+     - **Lyrics:** `[Instrumental]`
+     - **Why it works:** Induces a physical sense of "Discomfort." The "Scratching" tag creates high-frequency anxiety.
+
+200. **[The "Ultimate" Emerald Masterpiece]**
+     - **Style:** `[Complete Professional Style] [Max Fidelity] [Emerald Radio Brand]`
+     - **Lyrics:** `[Chorus] This is the future of sound, looking at the world we found.`
+     - **Why it works:** The final synthesis. Uses "Fidelity" as the primary weight anchor.
 # Volume 5 (Part 4): The Advanced Prompt Library (Prompts 201-300)
 ## Emerald Sonic Architecture (v5.5)
 
@@ -1273,150 +1794,502 @@ These prompts focus on specific "Mechanical" tricks within the Suno engine.
 201. **[The Delta Blues Resonator]**
     - **Style:** `[Resonator Guitar] [Deep Male Vocal] [Slide] [Stomp Box Percussion] [Gritty] [1930s]`
     - **Structure:** `[Intro: Solo Guitar] [Verse: Rhythmic Stomp] [Chorus: Soulful Shout]`
-    - **Goal:** Forcing the AI to use "physical" string resonance rather than a clean acoustic tone.
+    - **Explanation:** Forcing the AI to use "physical" string resonance. The "Resonator" tag avoids the clean tone of a standard acoustic.
 
 202. **[The 90s G-Funk Bounce]**
     - **Style:** `[High-Pitched Whining Synth] [Deep Bass] [Slow Rhythmic Rap] [70s Funk Samples] [90s Hip-Hop]`
     - **Structure:** `[Verse: Laid Back] [Chorus: Smooth Hook] [Outro: Lowrider Bounce]`
-    - **Goal:** Capturing the specific "West Coast" rhythmic swing and signature synth lead.
+    - **Explanation:** Capturing the specific "West Coast" rhythmic swing. The "Whining Synth" is the definitive genre anchor.
 
 203. **[The Neoclassical Shred-Fest]**
     - **Style:** `[Harpsichord] [High-Speed Electric Guitar] [Double-Kick Drums] [Symphonic Metal] [Technical]`
     - **Structure:** `[Intro: Classical Arpeggio] [Verse: Heavy Riffing] [Solo: Technical Sweep Picking]`
-    - **Goal:** Inducing "Hyper-Speed" precision in both melodic and rhythmic elements.
+    - **Explanation:** Inducing "Hyper-Speed" precision. The model treats "Technical" as a prompt to increase the frequency of note events.
 
 204. **[The Ambient Shoegaze Cloud]**
     - **Style:** `[Reverse Reverb] [Wall of Sound] [Ethereal Vocals] [Muffled] [Dreamy] [Shoegaze]`
     - **Structure:** `[Intro: Sonic Bloom] [Verse: Muffled Melody] [Outro: Fading Noise]`
-    - **Goal:** Testing the "Latent Density" limits of the Suno v5.5 engine.
+    - **Explanation:** Testing the "Latent Density" limits. The "Wall of Sound" tag fills all frequency bands with harmonic noise.
 
 205. **[The Tribal Industrial Ritual]**
     - **Style:** `[Large Log Drums] [Metallic Clangs] [Chanted Vocals] [Primal] [Dark Ambient]`
     - **Structure:** `[Intro: Nature Sounds] [Chorus: Rhythmic Factory Noises] [Outro: Echoes]`
-    - **Goal:** Blending organic primal percussion with cold mechanical "sound design."
+    - **Explanation:** Blending organic primal percussion with cold mechanical clangs. The "Primal" tag induces repetitive, tribal unisons.
 
 206. **[The 80s City Pop Night]**
     - **Style:** `[FM Synthesis] [Slap Bass] [Polished Female Vocal] [Jazz Fusion Pop] [Bright] [120 BPM]`
     - **Structure:** `[Verse: Sophisticated Chords] [Chorus: Uplifting Hook] [Solo: Saxophone]`
-    - **Goal:** Engineering the specific "Neon Nostalgia" of 1980s Japanese pop.
+    - **Explanation:** Engineering the specific "Neon Nostalgia" of 1980s Japanese pop. The "FM Synthesis" tag triggers DX7-style bell and bass tones.
 
 207. **[The Dark Cabaret Waltz]**
     - **Style:** `[Accordion] [Theatrical Male Vocal] [Staccato Piano] [Minor Key] [Sinister] [3/4 Time]`
     - **Structure:** `[Intro: Circus Waltz] [Verse: Dramatic Storytelling] [Chorus: Orchestral Swell]`
-    - **Goal:** Forcing a 3/4 "Waltz" meter with a "Tim Burton" aesthetic.
+    - **Explanation:** Forcing a 3/4 "Waltz" meter with an ominous tone. The "Theatrical" tag prevents a standard "Singing" delivery.
 
 208. **[The 8-Bit Chiptune Soul]**
     - **Style:** `[Square Wave] [Triangle Wave] [Motown Vocals] [Nostalgic] [Groovy]`
     - **Structure:** `[Verse: Pixelated Melodies] [Chorus: Soulful Harmonies] [Solo: Pulse Width Modulation]`
-    - **Goal:** Using digital chip-sounds to perform a very "human" genre (Soul).
+    - **Explanation:** Using digital chip-sounds to perform a very human genre. The contrast creates a unique "Cyber-Soul" aesthetic.
 
-209. **[The Cinematic Horror "Jump-Scare"]**
+209. **[The Cinematic Horror Jump-Scare]**
     - **Style:** `[Dissonant Strings] [Low Drone] [Sudden Loud Metallic Bang] [Tense] [Ominous]`
     - **Structure:** `[Intro: Quiet Creaking] [Pre-Chorus: Rising Dissonance] [Chorus: EXPLOSIVE BANG]`
-    - **Goal:** Creating a "Functional SFX" asset for film/video editors.
+    - **Explanation:** Creating functional audio assets. The "Dissonant" tag avoids any standard scale, creating melodic "wrongness."
 
 210. **[The Minimalist Techno Pulse]**
     - **Style:** `[909 Kick] [Resonant Filter Sweep] [Sub-Bass] [Repetitive] [Clinical] [128 BPM]`
     - **Structure:** `[Verse: Minimal Groove] [Chorus: Filter Opening] [Outro: Beat Only]`
-    - **Goal:** Proving the AI's ability to maintain a rock-solid EDM club rhythm.
+    - **Explanation:** Proving the AI's ability to maintain a rock-solid EDM club rhythm. The "Clinical" tag removes any humanized timing errors.
 
----
-*(Prompts 211-300 continued - Each focusing on a hyper-niche or specific production trick)*
+211. **[The "Lo-fi Girl" Study Vibe]**
+    - **Style:** `[Dusty Samples] [Melodic Rhodes] [Muffled Drums] [Lo-fi] [Study]`
+    - **Structure:** `[Verse: Piano Loop] [Chorus: Bass Entry] [Outro: Rain SFX]`
+    - **Explanation:** Focuses on consistency. The "Rhodes" tag provides that signature warm, electric piano tone.
 
-211. **[The "Lo-fi Girl" Study Vibe]:** Dusty samples and melodic Rhodes.
-212. **[The Aggressive "Phonk" Drift]:** Distorted cowbell and Memphis rap focus.
-213. **[The Celtic-Punk Anthem]:** Fast fiddles and raspy group vocals.
-214. **[The Synthwave "Drive" Aesthetic]:** Arpeggiated pads and 80s electronic percussion.
-215. **[The "Unplugged" Grunge Session]:** Acoustic guitar and emotional, raw performance.
-216. **[The Operatic Black Metal]:** High-pitched soprano over blast-beat drumming.
-217. **[The Future-Bass "Wobble"]:** Sidechain compression and swelling synth chords.
-218. **[The "Old-Timey" Radio News]:** 1940s voice-over style with high-pass filters.
-219. **[The Shamanic Throat Singing]:** Low-frequency overtones and tribal drums.
-220. **[The Math-Rock Tapping]:** Complex technical clean guitar melodies.
-221. **[The Vaporwave "Muzak" Remix]:** Slowed, reverb-drenched 80s elevator music.
-222. **[The Industrial Ska Party]:** Metallic horns and aggressive upbeat rhythms.
-223. **[The Bossa Nova IDM]:** Smooth Latin guitar with digital glitching.
-224. **[The Spaghetti Western Trap]:** Whistles and trumpets over heavy 808s.
-225. **[The 1920s Swing-Hop]:** Brass big-band samples over modern boom-bap.
-226. **[The Cinematic "Victory" Fanfare]:** Short, bright, orchestral payoff.
-227. **[The "Deep Sea" Ambient]:** Muffled, resonant pads and water SFX.
-228. **[The High-Energy "Euro-Beat"]:** 160 BPM synth-pop with frantic energy.
-229. **[The Gothic Gospel Choir]:** Dark, minor-key harmonies with a heavy pipe organ.
-230. **[The "Glitchy" Robot Love Song]:** Synthesized vocals with intentional digital errors.
-231. **[The Afrobeat Shoegaze Cloud]:** Syncopated rhythms under a wall of noise.
-232. **[The "Aggressive" Viking War-Chant]:** Deep horns and shouted group unisons.
-233. **[The Lo-fi "Basement" Punk]:** Distorted, messy, high-energy recording.
-234. **[The "Noble" Royal Coronation]:** Majestic brass and rising orchestral strings.
-235. **[The Tropical "Goth" Holiday]:** Marimbas in a spooky minor key.
-236. **[The "Sinister" Music Box]:** Tense, high-pitched mechanical chimes.
-237. **[The Math-Pop 7/8 Hook]:** Catchy melody in a complex time signature.
-238. **[The "Ethereal" Drill Cloud]:** Airy pads over heavy sliding rap bass.
-239. **[The Dark-Electro Waltz]:** 3/4 time with industrial synths.
-240. **[The "Peaceful" Zen Meditation]:** Koto and water sounds, very slow.
-241. **[The "Aggressive" Breakcore Break]:** 200 BPM sampled drum chaos.
-242. **[The "Soulful" 8-Bit Diva]:** R&B vocals over arcade chip-sounds.
-243. **[The "Intense" Hackers Theme]:** Frantic electronic sequences and glitches.
-244. **[The "Rustic" Americana Banjo]:** Fast picking and warm, simple vocals.
-245. **[The "Celestial" Space Odyssey]:** Long, evolving synth pads and no drums.
-246. **[The "Aggressive" Trap-Metal]:** Screamed vocals and heavy 808 distortion.
-247. **[The "Whimsical" Tavern Jig]:** Accordion and group stomping.
-248. **[The "Deep" Tech-House Groove]:** Minimalist 4-on-the-floor with soul samples.
-249. **[The "Gritty" Desert Slide Rock]:** Dusty, raw blues-rock aesthetic.
-250. **[The "Magical" Fairy-Tale Theme]:** Celesta, harp, and soaring strings.
-251. **[The "Sad" Cello Soliloquy]:** High-emotional minor key performance.
-252. **[The "High-Stakes" Noir Poker]:** Jazz brushes and tense double-bass.
-253. **[The "Aggressive" Dubstep Growl]:** Mechanical "talking" bass textures.
-254. **[The "Uplifting" Corporate Acoustic]:** Clean, safe, high-fidelity pop.
-255. **[The "Sinister" Clown Carnival]:** Out-of-tune piano and manic accordion.
-256. **[The "Epic" Boss Battle Phase 1]:** Rising orchestral tension.
-257. **[The "Epic" Boss Battle Phase 2]:** Added heavy electronic drums.
-258. **[The "Epic" Boss Battle Final Form]:** Max density Choir and Distortion.
-259. **[The "Peaceful" Morning Sunrise]:** High-pitched strings and soft piano.
-260. **[The "Dark" Underworld Drone]:** Low-frequency sustained noise.
-261. **[The "Aggressive" Pirate Metal]:** Sea-shanty group vocals with heavy riffs.
-262. **[The "Soft" Bedtime Lullaby]:** Whispered vocals and gentle bells.
-263. **[The "Hectic" Jazz-Fusion Solo]:** Fast improvised technical drumming.
-264. **[The "Dreamy" Vaporwave Sunset]:** Saxophone over reverb-heavy pads.
-265. **[The "Intense" Chase Scene]:** Rhythmic staccato strings and percussion.
-266. **[The "Sad" Harmonica Blues]:** Lone instrument in a vast reverberant space.
-267. **[The "Noble" Hero's Return]:** Triumphant brass and major key resolution.
-268. **[The "Rustic" Fiddle Jam]:** High-speed folk technicality.
-269. **[The "Spooky" Graveyard Ambience]:** Wind sounds and distant bells.
-270. **[The "Aggressive" Glitch-Hop Drop]:** Broken beats and vocal stuttering.
-271. **[The "Soulful" Gospel House]:** 4-on-the-floor with massive choir hooks.
-272. **[The "Cinematic" Travel Vlog]:** Bright, upbeat, rhythmic strings.
-273. **[The "Dark" Noir Investigation]:** Slow muted trumpet and rain SFX.
-274. **[The "Euphoric" Trance Rise]:** 138 BPM melodic synth climb.
-275. **[The "Minimalist" Solo Piano]:** Pensive, slow, lots of "air" in the room.
-276. **[The "Aggressive" Punk Rock Skank]:** Fast, raw energy and shouts.
-277. **[The "Dreamy" Synth-Pop Glow]:** 80s neon aesthetic, soft vocals.
-278. **[The "Tribal" War Drum Chant]:** Primal percussion and low drones.
-279. **[The "Classy" Cocktail Jazz]:** Sophisticated piano and upright bass.
-280. **[The "Intense" Cyber-Thriller]:** Glitchy electronic sequences.
-281. **[The "Sad" Emo-Trap Ballad]:** Melancholic guitar and high-pitched vocals.
-282. **[The "Aggressive" Thrash Shred]:** High-speed riffs and double-kick drums.
-283. **[The "Peaceful" Mountain Flute]:** Airy, echoing woodwind solo.
-284. **[The "Deep" Forest Ambient]:** Bird sounds and long synth swells.
-285. **[The "Uplifting" Olympic Theme]:** Grandiose brass and epic scale.
-286. **[The "Sinister" Puppet Show]:** Creaky mechanical sounds and minor piano.
-287. **[The "Hectic" Math-Core Break]:** Extreme rhythmic complexity and screams.
-288. **[The "Dreamy" Lo-fi Nostalgia]:** Muffled record samples and soft beats.
-289. **[The "Intense" Countdown Timer]:** Ticking clock percussion and rising bass.
-290. **[The "Sad" Opera Finale]:** Dramatic soprano and weeping orchestral.
-291. **[The "Noble" Knight's Oath]:** Low-frequency brass and majestic strings.
-292. **[The "Rustic" Campfire Song]:** Acoustic guitar and group humming.
-293. **[The "Tropical" Steel Drum Sunset]:** Soft island percussion and pads.
-294. **[The "Sinister" Shadow Realm]:** Dissonant high-pitched pads and drones.
-295. **[The "Epic" Galactic Voyage]:** Orchestral + Cosmic synths, large scale.
-296. **[The "Sad" Broken Toy Theme]:** Out-of-tune music box and pensive piano.
-297. **[The "Aggressive" Riot Grind]:** Maximum noise, distortion, and speed.
-298. **[The "Peaceful" Underwater Cave]:** Liquid sounds and resonant low pads.
-299. **[The "Intense" Interrogation Noir]:** Tense strings and occasional heartbeats.
-300. **[The "Ultimate" Sonic Blueprint]:** The perfect synthesis of all genres.
+212. **[The Aggressive Phonk Drift]**
+    - **Style:** `[Distorted Memphis Rap] [Cowbell] [Aggressive Bass] [High BPM] [Drift]`
+    - **Structure:** `[Hook: Deep 808] [Verse: Fast Rap] [Outro: Cowbell Solo]`
+    - **Explanation:** The definitive "Sigma" sound. The Memphis rap influence provides the triplet-based flow.
 
----
-**Total Prompts Cataloged: 300.**
-**Final Volume Complete.**
+213. **[The Celtic-Punk Anthem]**
+    - **Style:** `[Fast Fiddles] [Raspy Group Vocals] [Overdriven Guitar] [High Energy] [Irish]`
+    - **Structure:** `[Intro: Fiddle Jig] [Verse: Punk Beat] [Chorus: Group Shout]`
+    - **Explanation:** Blends traditional folk speed with the aggression of street punk.
+
+214. **[The Synthwave Drive Aesthetic]**
+    - **Style:** `[Arpeggiated Pads] [80s Drums] [Neon] [Cinematic] [Synthwave]`
+    - **Structure:** `[Intro: Slow Arp] [Chorus: Pulsing Bass] [Outro: Fading Synth]`
+    - **Explanation:** Replicates the "Retro-Future" sound of the 2010s. The "Arpeggiated" tag is the rhythmic engine here.
+
+215. **[The "Unplugged" Grunge Session]**
+    - **Style:** `[Acoustic Guitar] [Emotional Raw Performance] [Room Reverb] [90s] [Grunge]`
+    - **Structure:** `[Intro: Guitar Squeak] [Verse: Quiet] [Chorus: Loud Strumming]`
+    - **Explanation:** Focuses on dynamic range. The "Raw" tag prevents excessive studio polishing.
+
+216. **[The Operatic Black Metal]**
+    - **Style:** `[High Soprano Vocal] [Blast-beat Drumming] [Screamed Vocals] [Dark] [Metal]`
+    - **Structure:** `[Verse: Sonic Chaos] [Chorus: Opera Soaring] [Outro: Drone]`
+    - **Explanation:** Extreme frequency contrast. The high-register vocals provide "Light" against the "Dark" instrumentation.
+
+217. **[The Future-Bass Wobble]**
+    - **Style:** `[Sidechain Compression] [Swelling Synth Chords] [High Energy] [Electronic]`
+    - **Structure:** `[Build: Rising Synth] [Drop: Heavy Wobble] [Outro: Soft Pad]`
+    - **Explanation:** Uses the "Sidechain" tag to create the rhythmic "ducking" effect characteristic of modern EDM.
+
+218. **[The Old-Timey Radio News]**
+    - **Style:** `[1940s Voiceover] [High-pass Filter] [Vinyl Crackle] [Antique] [News]`
+    - **Structure:** `[Intro: Static] [Monologue: Breaking News] [Outro: Hiss]`
+    - **Explanation:** Induces a narrow-band frequency response, cutting out all bass and high-end sparkle.
+
+219. **[The Shamanic Throat Singing]**
+    - **Style:** `[Low Frequency Overtones] [Tribal Drums] [Ancient] [Deep Drone] [Ritual]`
+    - **Structure:** `[Intro: Wind] [Verse: Overtone Chant] [Chorus: Heavy Drums]`
+    - **Explanation:** A technical challenge for the vocal transformer. Focuses on "Resonant Drones."
+
+220. **[The Math-Rock Tapping]**
+    - **Style:** `[Complex Technical Clean Guitar] [Tapping Melody] [11/8 Time] [Bright]`
+    - **Structure:** `[Verse: Complex Riff] [Chorus: Harmonic Release] [Solo: Fast Tapping]`
+    - **Explanation:** Proves rhythmic stability in odd meters. The "Tapping" tag biases the model toward hammer-on and pull-off sounds.
+
+221. **[The Vaporwave Muzak Remix]**
+    - **Style:** `[Slowed 80s Elevator Music] [Heavy Hall Reverb] [VHS Hiss] [Muffled]`
+    - **Structure:** `[Verse: Jazzy Sax] [Chorus: Dreamy Pad] [Outro: Tape Warp]`
+    - **Explanation:** Reimagines consumerist background music as a surreal, nostalgic artifact.
+
+222. **[The Industrial Ska Party]**
+    - **Style:** `[Metallic Horns] [Aggressive Upbeat Rhythm] [Mechanical Clangs] [Ska]`
+    - **Structure:** `[Verse: Skank Beat] [Chorus: Factory Noises] [Solo: Distorted Sax]`
+    - **Explanation:** The party of Ska meets the factory of Industrial. High-energy percussive contrast.
+
+223. **[The Bossa Nova IDM]**
+    - **Style:** `[Smooth Latin Guitar] [Digital Glitching] [Clinical] [Smooth Vocals]`
+    - **Structure:** `[Verse: Traditional Latin] [Chorus: Glitch Interruption] [Outro: Static]`
+    - **Explanation:** A study in "Organic vs. Synthetic." The "Glitching" tag introduces rhythmic digital errors.
+
+224. **[The Spaghetti Western Trap]**
+    - **Style:** `[Cinematic Whistle] [Muted Trumpet] [Deep 808s] [Trap Drums] [Heroic]`
+    - **Structure:** `[Intro: Morricone Whistle] [Hook: Modern Rhythm] [Verse: Storytelling]`
+    - **Explanation:** Brings the narrative weight of a Western score to the energy of a trap beat.
+
+225. **[The 1920s Swing-Hop]**
+    - **Style:** `[Big Band Brass Samples] [Modern Boom-Bap Beat] [High Energy] [Swing]`
+    - **Structure:** `[Intro: Brass Stab] [Hook: Rhythmic Rap] [Verse: Jazz Chords]`
+    - **Explanation:** The "Electro-Swing" evolution. Blends 1920s orchestration with 1990s street beats.
+
+226. **[The Cinematic Victory Fanfare]**
+    - **Style:** `[Short Triumphant Brass] [Major Key] [Heroic] [Orchestral Payoff]`
+    - **Structure:** `[Intro: Drum Roll] [Chorus: Grandiose Finish]`
+    - **Explanation:** Functional audio for content creators. Provides an immediate sense of accomplishment.
+
+227. **[The Deep Sea Ambient]**
+    - **Style:** `[Muffled Resonant Pads] [Water SFX] [Bubbling] [Very Slow] [Vast]`
+    - **Structure:** `[Intro: Liquid] [Verse: Slow Pad Swell] [Outro: Echoes]`
+    - **Explanation:** Focuses on "Aquatic" sound design. The muffled tag simulates hearing the audio underwater.
+
+228. **[The High-Energy Euro-Beat]**
+    - **Style:** `[160 BPM] [Hyper-Bright Synth Leads] [Fast Vocal Delivery] [Euphoric]`
+    - **Structure:** `[Intro: Fast Drum Fill] [Chorus: Adrenaline Hook] [Solo: Synth]`
+    - **Explanation:** Pure speed. The high BPM forces the AI into a "Mechanical Precision" performance.
+
+229. **[The Gothic Gospel Choir]**
+    - **Style:** `[Dark Minor Key Harmonies] [Heavy Pipe Organ] [Anthemic] [Haunting]`
+    - **Structure:** `[Intro: Organ Drone] [Chorus: Choral Explosion] [Outro: Bell]`
+    - **Explanation:** Brings "Sacred" scale to a "Sinister" harmonic palette.
+
+230. **[The Glitchy Robot Love Song]**
+    - **Style:** `[Synthesized Vocals] [Intentional Digital Errors] [Square-wave] [Cute]`
+    - **Structure:** `[Verse: Beeping Melody] [Chorus: Glitchy Vocal] [Outro: Static]`
+    - **Explanation:** Humanizes technology through imperfection. The "Errors" tag is the key creative anchor.
+
+231. **[The Afrobeat Shoegaze Cloud]**
+    - **Style:** `[Syncopated Rhythms] [Wall of Guitar Noise] [Muffled Vocals] [Dense]`
+    - **Structure:** `[Intro: Rhythmic Loop] [Chorus: Sonic Blur] [Bridge: Bass Groove]`
+    - **Explanation:** Keeps the "Groove" of Africa within the "Cloud" of Shoegaze. It balances rhythmic clarity with harmonic density.
+
+232. **[The Aggressive Viking War-Chant]**
+    - **Style:** `[Deep War Horns] [Shouted Group Unisons] [Heavy Drums] [Primal]`
+    - **Structure:** `[Intro: Lone Horn] [Hook: Shouted Chant] [Outro: Fading Fire]`
+    - **Explanation:** High-impact "Aura" music. Focuses on the "Weight" of the group performance.
+
+233. **[The Lo-fi Basement Punk]**
+    - **Style:** `[Distorted Messy Guitars] [High-energy Shouts] [Raw] [Unpolished]`
+    - **Structure:** `[Intro: Feedback] [Verse: Fast Beat] [Chorus: Chaotic Noise]`
+    - **Explanation:** Intentionally sacrifices quality for "Energy." The "Messy" tag prevents the model from aligning the notes too perfectly.
+
+234. **[The Noble Royal Coronation]**
+    - **Style:** `[Majestic Brass] [Rising Orchestral Strings] [Heroic] [Grandiose]`
+    - **Structure:** `[Intro: Fanfare] [Verse: Slow Swell] [Chorus: Triumphant Theme]`
+    - **Explanation:** High "Prestige" factor. Uses brass unisons to create a sense of scale and authority.
+
+235. **[The Tropical Goth Holiday]**
+    - **Style:** `[Marimbas] [Minor Key] [Steel Drums] [Spooky Vocals] [Halloween]`
+    - **Structure:** `[Intro: Jungle Night] [Verse: Skeletal Marimba] [Chorus: Haunting Steel]`
+    - **Explanation:** A "Sinister Holiday" vibe. The minor key undermines the usually "Happy" tropical instruments.
+
+236. **[The Sinister Music Box]**
+    - **Style:** `[Tense Mechanical Bells] [Out-of-tune Piano] [Ominous] [Slow]`
+    - **Structure:** `[Intro: Wind-up SFX] [Verse: Fragile Melody] [Outro: Abrupt Stop]`
+    - **Explanation:** Triggers childhood nostalgia but twists it into dread using "Out-of-tune" anchors.
+
+237. **[The Math-Pop 7/8 Hook]**
+    - **Style:** `[7/8 Time Signature] [Catchy Pop Hook] [Clean Tapping Guitar] [Bright]`
+    - **Structure:** `[Intro: Complex Riff] [Verse: Pop Melody] [Chorus: 7/8 Groove]`
+    - **Explanation:** Proves that non-standard meters can still be "Pop." The 7/8 tag provides a "Skipping" rhythmic feel.
+
+238. **[The Ethereal Drill Cloud]**
+    - **Style:** `[Airy Pads] [Heavy Sliding Rap Bass] [Whispered Rap] [Modern]`
+    - **Structure:** `[Hook: Soaring Pad] [Verse: Intimate Rap] [Outro: Faded Echo]`
+    - **Explanation:** A softer, more atmospheric version of modern drill. The "Cloud" tag biases toward high-frequency synth pads.
+
+239. **[The Dark-Electro Waltz]**
+    - **Style:** `[3/4 Time] [Industrial Synths] [Mechanical Clang Beat] [Tense]`
+    - **Structure:** `[Intro: Tango Staccato] [Verse: 3/4 Engine Rhythm] [Chorus: Heavy Synth]`
+    - **Explanation:** An elegant dance performed by robots in a dark setting. Forces the 3/4 meter onto electronic instruments.
+
+240. **[The Peaceful Zen Meditation]**
+    - **Style:** `[Koto] [Water Sounds] [Minimalist] [Meditative] [Very Slow]`
+    - **Structure:** `[Intro: Liquid] [Verse: Plucked Melody] [Outro: Silence]`
+    - **Explanation:** Designed for maximum relaxation. Removes any percussive transients to avoid disturbing the "Zen" state.
+
+241. **[The Aggressive Breakcore Break]**
+    - **Style:** `[200 BPM] [Sampled Drum Chaos] [Screamed Vocals] [Hectic]`
+    - **Structure:** `[Intro: Fast Snare] [Chorus: Total Rhythmic Noise] [Solo: Broken Beat]`
+    - **Explanation:** A technical stress test for the model. The 200 BPM tag pushes the rhythmic generator to its limit.
+
+242. **[The Soulful 8-Bit Diva]**
+    - **Style:** `[R&B Vocals] [Arcade Chip-sounds] [Square Wave] [Groovy] [Nostalgic]`
+    - **Structure:** `[Verse: Pixelated Melody] [Chorus: Rich Harmonies] [Solo: 8-bit]`
+    - **Explanation:** Uses digital limitations to perform a human genre. The contrast creates a unique "Cyber-Soul" sound.
+
+243. **[The Intense Hackers Theme]**
+    - **Style:** `[Frantic Electronic Sequences] [Glitchy Textures] [160 BPM] [Cold]`
+    - **Structure:** `[Intro: Data Stream] [Verse: Rhythmic Beeps] [Chorus: High-Speed Tech]`
+    - **Explanation:** Designed for pacing. The "Frantic" tag induces rapid-fire melodic changes.
+
+244. **[The Rustic Americana Banjo]**
+    - **Style:** `[Fast Banjo Picking] [Warm Simple Vocals] [Acoustic] [Folk]`
+    - **Structure:** `[Intro: Solo Banjo] [Verse: Storytelling] [Outro: Nature]`
+    - **Explanation:** High "Warmth" factor. The "Rustic" tag ensures an unproduced, "Front Porch" recording quality.
+
+245. **[The Celestial Space Odyssey]**
+    - **Style:** `[Long Evolving Synth Pads] [No Drums] [Cosmic] [Spacey] [Vast]`
+    - **Structure:** `[Intro: Vacuum] [Verse: Star Field Swell] [Outro: Eternal Fade]`
+    - **Explanation:** Removes gravity from the audio. The "No Drums" tag allows the synths to drift without a rhythmic anchor.
+
+246. **[The Aggressive Trap-Metal]**
+    - **Style:** `[Screamed Vocals] [Heavy 808 Distortion] [Fast] [Violent] [Trap]`
+    - **Structure:** `[Hook: Deep Bass] [Verse: High Strain Screams] [Outro: Feedback]`
+    - **Explanation:** Blends the energy of metal with the rhythm of trap. The "Distortion" tag is pushed to the maximum here.
+
+247. **[The Whimsical Tavern Jig]**
+    - **Style:** `[Accordion] [Group Male Stomping] [Playful] [Folk] [Fast]`
+    - **Structure:** `[Intro: Foot Stomp] [Verse: Accordion Lick] [Chorus: Group Shout]`
+    - **Explanation:** Designed for social "Vibe" content. The "Stomping" tag provides the primary rhythmic drive.
+
+248. **[The Deep Tech-House Groove]**
+    - **Style:** `[Minimalist 4-on-the-floor] [Soul Samples] [Sub-Bass] [Club]`
+    - **Structure:** `[Intro: Beat Only] [Verse: Bass Entry] [Chorus: Vocal Slice]`
+    - **Explanation:** Focuses on the "Pocket." The kick drum and bass remain perfectly synchronized for a dancefloor "Hypnosis."
+
+249. **[The Gritty Desert Slide Rock]**
+    - **Style:** `[Slide Guitar] [Dusty Acoustic Drums] [Raw Vocals] [Western]`
+    - **Structure:** `[Intro: Desert Wind] [Verse: Slide Riff] [Chorus: Dusty Drive]`
+    - **Explanation:** Focuses on "Dryness." Avoids reverb to maintain a "Sun-baked" acoustic quality.
+
+250. **[The Magical Fairy-Tale Theme]**
+    - **Style:** `[Celesta] [Harp] [Soaring Orchestral Strings] [Magical] [Fantasy]`
+    - **Structure:** `[Intro: Sparkle] [Verse: Gentle Theme] [Chorus: Grandiose Reveal]`
+    - **Explanation:** Designed for visual "Transformation" moments. The Celesta provides the crystalline, magical "Dust."
+
+251. **[The Sad Cello Soliloquy]**
+    - **Style:** `[High-emotional Minor Key] [Solo Cello] [Slow] [Mournful]`
+    - **Structure:** `[Intro: Lone Note] [Verse: Weeping Melody] [Outro: Fade]`
+    - **Explanation:** Focuses on "Human" performance. The "Mournful" tag induces slow, emotional string vibrato.
+
+252. **[The High-Stakes Noir Poker]**
+    - **Style:** `[Jazz Brushes] [Tense Upright Bass] [Muted Trumpet] [Noir]`
+    - **Structure:** `[Intro: Card Shuffle] [Verse: Tense Bass] [Outro: Smoke]`
+    - **Explanation:** Creates a narrative of "Risk." The "Muted Trumpet" provides the signature detective aesthetic.
+
+253. **[The Aggressive Dubstep Growl]**
+    - **Style:** `[Mechanical Talking Bass] [Heavy Electronic Drums] [Filthy]`
+    - **Structure:** `[Build: Rising Synth] [Drop: Extreme Growl] [Outro: Static]`
+    - **Explanation:** Focuses on "Sound Design." The "Talking Bass" tag induces formant-shifted synth filters.
+
+254. **[The Uplifting Corporate Acoustic]**
+    - **Style:** `[Clean Acoustic Guitar] [Safe Upbeat Piano] [Hi-fi] [Corporate]`
+    - **Structure:** `[Intro: Bright Chords] [Verse: Steady Rhythm] [Outro: Positive]`
+    - **Explanation:** Designed for background use. Avoids any "Edgy" harmonic or rhythmic choices.
+
+255. **[The Sinister Clown Carnival]**
+    - **Style:** `[Out-of-tune Piano] [Manic Accordion] [Zany SFX] [Ominous]`
+    - **Structure:** `[Verse: Circus Waltz] [Chorus: Chaotic Noise] [Outro: Laugh]`
+    - **Explanation:** Uses "Wrong" sounds in a high-energy setting to create "Uncanny" dread.
+
+256. **[The Epic Boss Battle Phase 1]**
+    - **Style:** `[Rising Orchestral Tension] [Dissonant Strings] [Epic] [Gaming]`
+    - **Structure:** `[Intro: Low Drone] [Chorus: Tense Swell]`
+    - **Explanation:** Phase 1 focusing on "Anticipation." Avoids heavy drums to leave space for the later escalation.
+
+257. **[The Epic Boss Battle Phase 2]**
+    - **Style:** `[Added Heavy Electronic Drums] [Orchestral] [Rising Intensity]`
+    - **Structure:** `[Verse: Tense Strings] [Chorus: Heavy Impact]`
+    - **Explanation:** Introduces the "Action" element. The transition from Phase 1 to 2 is engineered using extensions.
+
+258. **[The Epic Boss Battle Final Form]**
+    - **Style:** `[Max Density Dark Choir] [Extreme Distortion Metal] [Aggressive]`
+    - **Structure:** `[Verse: Sonic Chaos] [Chorus: Grandiose Climax]`
+    - **Explanation:** Maximum sonic density. Blends high-art choir with low-end metal distortion.
+
+259. **[The Peaceful Morning Sunrise]**
+    - **Style:** `[High-pitched Melodic Strings] [Soft Piano] [Bright] [Positive]`
+    - **Structure:** `[Intro: Birds] [Verse: Light Melody] [Outro: Sun]`
+    - **Explanation:** High frequency + major key = instant "Hope" energy.
+
+260. **[The Dark Underworld Drone]**
+    - **Style:** `[Low-frequency Sustained Noise] [Ominous] [Slow] [Vast]`
+    - **Structure:** `[Intro: Earth Thud] [Verse: Bottomless Pit Swell]`
+    - **Explanation:** An exercise in "Vibe." Removes all melody and rhythm to focus on "Atmosphere."
+
+261. **[The Aggressive Pirate Metal]**
+    - **Style:** `[Sea-shanty Group Vocals] [Heavy Metal Riffs] [Nautical] [Fast]`
+    - **Structure:** `[Intro: Sea SFX] [Chorus: Shouted Hook] [Solo: Shredding]`
+    - **Explanation:** Blends the "Nostalgia" of the sea with the "Rage" of modern metal.
+
+262. **[The Soft Bedtime Lullaby]**
+    - **Style:** `[Whispered Vocals] [Gentle Bells] [Soft Pad] [Lullaby]`
+    - **Structure:** `[Verse: Quiet] [Chorus: Airy] [Outro: Silence]`
+    - **Explanation:** Designed for sleep. The "Whispered" tag minimizes the vocal impact.
+
+263. **[The Hectic Jazz-Fusion Solo]**
+    - **Style:** `[Fast Improvised Technical Drumming] [Bebop Piano] [Technical]`
+    - **Structure:** `[Verse: Swing] [Solo: Maximum Complexity]`
+    - **Explanation:** A stress test for rhythmic "Humanization." Pushes the AI toward "Virtuoso" performance.
+
+264. **[The Dreamy Vaporwave Sunset]**
+    - **Style:** `[Slowed Jazzy Saxophone] [Reverb-heavy Pads] [VHS Hiss] [Dreamy]`
+    - **Structure:** `[Intro: Tape Warp] [Chorus: Cloud-like Sax]`
+    - **Explanation:** Focuses on "Texture Degradation." The "VHS Hiss" tag provides the nostalgic mid-range "Crack."
+
+265. **[The Intense Chase Scene]**
+    - **Style:** `[Rhythmic Staccato Strings] [Fast Percussion] [Tense] [Action]`
+    - **Structure:** `[Intro: Pulsing Bass] [Verse: Fast Strings] [Outro: Sudden Stop]`
+    - **Explanation:** Designed for pacing. The "Staccato" tag provides the constant, ticking drive.
+
+266. **[The Sad Harmonica Blues]**
+    - **Style:** `[Lone Harmonica] [Vast Reverberant Space] [Mournful] [Delta Blues]`
+    - **Structure:** `[Intro: Wind] [Verse: Weeping Harmonica] [Outro: Echoes]`
+    - **Explanation:** Uses a single instrument to convey scale. The "Vast Space" tag induces long reverb tails.
+
+267. **[The Noble Hero's Return]**
+    - **Style:** `[Triumphant Brass] [Major Key Resolution] [Heroic] [Anthemic]`
+    - **Structure:** `[Intro: Fanfare] [Chorus: Majestic Theme] [Outro: Big Finish]`
+    - **Explanation:** High-impact resolution. The brass unisons provide the sense of "Glory."
+
+268. **[The Rustic Fiddle Jam]**
+    - **Style:** `[High-speed Folk Fiddle] [Rhythmic Stomping] [Acoustic] [Folk]`
+    - **Structure:** `[Intro: Fast Bowing] [Verse: Folk Jam] [Solo: Fiddle Shred]`
+    - **Explanation:** Focuses on "Performance Speed." The "Stomping" tag provides the grounding percussion.
+
+269. **[The Spooky Graveyard Ambience]**
+    - **Style:** `[Wind Sounds] [Distant Bell] [Tense Pad] [Ominous] [Eerie]`
+    - **Structure:** `[Intro: Crows] [Verse: Haunting Bell] [Outro: Wind]`
+    - **Explanation:** A soundscape for horror. Focuses on "Functional Noise" rather than musicality.
+
+270. **[The Aggressive Glitch-Hop Drop]**
+    - **Style:** `[Broken Beat] [Vocal Stuttering] [Bitcrushed] [Modern] [Funky]`
+    - **Structure:** `[Verse: Steady Beat] [Drop: Digital Chaos] [Solo: Glitch]`
+    - **Explanation:** Uses "Modern Failure" as a dance anchor. The "Stuttering" tag is the key hook.
+
+271. **[The Soulful Gospel House]**
+    - **Style:** `[4-on-the-floor Beat] [Massive Choir Hooks] [Euphoric] [Anthemic]`
+    - **Structure:** `[Intro: Organ] [Chorus: Choral Wall] [Outro: Piano]`
+    - **Explanation:** Blends the "Soul" of the church with the "Drive" of the club.
+
+272. **[The Cinematic Travel Vlog]**
+    - **Style:** `[Bright Upbeat Rhythmic Strings] [Safe Positive Piano] [Cinematic]`
+    - **Structure:** `[Intro: Light Swell] [Verse: Steady Drive] [Outro: Bright]`
+    - **Explanation:** Designed for high-end lifestyle content. Avoids any dramatic minor-key shifts.
+
+273. **[The Dark Noir Investigation]**
+    - **Style:** `[Slow Muted Trumpet] [Rain SFX] [Tense Double-Bass] [Noir]`
+    - **Structure:** `[Intro: Rainy City] [Verse: Lonely Horn] [Outro: Fog]`
+    - **Explanation:** Creates a specific "Location" in the listener's mind. The "Rain" tag is the atmospheric anchor.
+
+274. **[The Euphoric Trance Rise]**
+    - **Style:** `[138 BPM] [Melodic Synth Climb] [Arpeggiated] [Dreamy] [Trance]`
+    - **Structure:** `[Intro: Constant Pad] [Build: Rising Pitch] [Drop: Melodic Release]`
+    - **Explanation:** Pure emotional payoff. The "138 BPM" tag is a genre-specific anchor for "Classic Trance."
+
+275. **[The Minimalist Solo Piano]**
+    - **Style:** `[Pensive Slow Piano] [Acoustic Room Sounds] [Minimalist] [Sad]`
+    - **Structure:** `[Intro: Silence] [Verse: Simple Melody] [Outro: Record Stop]`
+    - **Explanation:** Focuses on the "Air." The room sounds provide a sense of physical reality to the AI generation.
+
+276. **[The Aggressive Punk Rock Skank]**
+    - **Style:** `[Fast Raw Punk Beat] [Aggressive Shouted Vocals] [Garage]`
+    - **Structure:** `[Intro: Guitar Feedback] [Verse: Fast Energy] [Chorus: Shouts]`
+    - **Explanation:** High-speed rebellion. The "Garage" tag prevents the mix from being too "Clean."
+
+277. **[The Dreamy Synth-Pop Glow]**
+    - **Style:** `[80s Neon Aesthetic] [Soft Airy Vocals] [Anthemic] [Synthwave]`
+    - **Structure:** `[Intro: Slow Arp] [Chorus: Pulsing Bass] [Outro: Faded Hook]`
+    - **Explanation:** Uses "Neon" as a stylistic weight anchor to favor high-frequency arpeggios.
+
+278. **[The Tribal War Drum Chant]**
+    - **Style:** `[Primal Percussion] [Low Frequency Drones] [Group Chanted Vocals]`
+    - **Structure:** `[Intro: Lone Drum] [Hook: Shouted Chant] [Outro: Earth]`
+    - **Explanation:** High-impact "Sigma" music. Focuses on the "Primal" response to repetitive drumming.
+
+279. **[The Classy Cocktail Jazz]**
+    - **Style:** `[Sophisticated Piano] [Upright Bass] [Jazz Brushes] [Relaxed]`
+    - **Structure:** `[Intro: Bebop Lick] [Verse: Swing] [Outro: Piano Resolve]`
+    - **Explanation:** Designed for high-end background use. Focuses on "Smoothness" and "Cool."
+
+280. **[The Intense Cyber-Thriller]**
+    - **Style:** `[Glitchy Electronic Sequences] [Tense Pad] [Fast BPM] [Futuristic]`
+    - **Structure:** `[Intro: Digital Noise] [Verse: Frantic Beeps] [Outro: Static]`
+    - **Explanation:** Designed for pacing. The "Sequences" tag induces complex, interlocking synth lines.
+
+281. **[The Sad Emo-Trap Ballad]**
+    - **Style:** `[Melancholic Acoustic Guitar] [High-pitched Vocals] [Trap Beat] [Sad]`
+    - **Structure:** `[Intro: Guitar Solo] [Verse: Quiet Rap] [Chorus: Emotional Hook]`
+    - **Explanation:** Blends the "Vulnerability" of Emo with the "Rhythm" of Trap.
+
+282. **[The Aggressive Thrash Shred]**
+    - **Style:** `[High-speed Riffs] [Double-kick Drums] [Violent] [Extreme Metal]`
+    - **Structure:** `[Intro: Drum Roll] [Verse: Fast Riffing] [Solo: Technical Shred]`
+    - **Explanation:** A technical stress test. The "Double-kick" tag is essential for the thrash metal feel.
+
+283. **[The Peaceful Mountain Flute]**
+    - **Style:** `[Airy Echoing Woodwind Solo] [Nature Sounds] [Zen] [Slow]`
+    - **Structure:** `[Intro: Wind] [Verse: Lone Flute] [Outro: Echo]`
+    - **Explanation:** Uses scale to convey peace. The "Airy" tag induces a breathy, human performance on the flute.
+
+284. **[The Deep Forest Ambient]**
+    - **Style:** `[Bird Songs] [Long Evolving Synth Swells] [Ambient] [Vast]`
+    - **Structure:** `[Intro: Forest morning] [Verse: Star Field Swell] [Outro: Silence]`
+    - **Explanation:** A sound design piece. Bird songs are integrated into the harmonic bed of the synths.
+
+285. **[The Uplifting Olympic Theme]**
+    - **Style:** `[Grandiose Brass] [Epic Scale Orchestral] [Heroic] [Triumphant]`
+    - **Structure:** `[Intro: Fanfare] [Chorus: Majestic Theme] [Outro: Big Finish]`
+    - **Explanation:** High "Prestige" factor. The brass unisons provide the sense of global importance.
+
+286. **[The Sinister Puppet Show]**
+    - **Style:** `[Creaky Mechanical Sounds] [Minor Key Piano] [Zany] [Ominous]`
+    - **Structure:** `[Intro: Clock Wind] [Verse: Fragile Melody] [Outro: Abrupt Cut]`
+    - **Explanation:** Uses childhood tropes to create "Wrongness." The "Creaky" tag adds a physical, mechanical layer.
+
+287. **[The Hectic Math-Core Break]**
+    - **Style:** `[Extreme Rhythmic Complexity] [Screams] [Chaotic Metal] [Fast]`
+    - **Structure:** `[Verse: Poly-metric Riff] [Chorus: Sonic Noise] [Solo: Chaos]`
+    - **Explanation:** A stress test for the AI's ability to handle clashing time signatures in a heavy setting.
+
+288. **[The Dreamy Lo-fi Nostalgia]**
+    - **Style:** `[Muffled Record Samples] [Soft Melodic Beats] [Nostalgic] [Lo-fi]`
+    - **Structure:** `[Verse: Piano Loop] [Chorus: Bass Entry] [Outro: Static]`
+    - **Explanation:** The classic "Vibe" track. The "Samples" tag biases the model toward a "Found Audio" aesthetic.
+
+289. **[The Intense Countdown Timer]**
+    - **Style:** `[Ticking Clock Percussion] [Rising Bass Tension] [Action] [Tense]`
+    - **Structure:** `[Intro: Lone Tick] [Pre-Chorus: Rising Drive] [Chorus: Explosion]`
+    - **Explanation:** Functional audio for thriller content. The "Ticking" tag forces a strict metronomic 60 or 120 BPM.
+
+290. **[The Sad Opera Finale]**
+    - **Style:** `[Dramatic Soprano] [Weeping Orchestral Strings] [Minor Key] [Epic]`
+    - **Structure:** `[Intro: Lone Violin] [Chorus: Soaring Aria] [Outro: Final Sob]`
+    - **Explanation:** Maximum emotional payoff. The "Dramatic" tag induces a high-vibrato, intense operatic performance.
+
+291. **[The Noble Knight's Oath]**
+    - **Style:** `[Low-frequency Brass] [Majestic Orchestral Strings] [Heroic] [Anthemic]`
+    - **Structure:** `[Intro: Deep Horn] [Chorus: Solemn Theme] [Outro: Resolve]`
+    - **Explanation:** Focuses on "Gravity" and "Honor." The low-frequency brass provides the grounding authority.
+
+292. **[The Rustic Campfire Song]**
+    - **Style:** `[Acoustic Guitar] [Group Humming] [Nature Sounds] [Earthy] [Slow]`
+    - **Structure:** `[Intro: Fire Crackle] [Verse: Folk Picking] [Chorus: Group Hum]`
+    - **Explanation:** Designed for extreme intimacy. The "Fire Crackle" tag provides the atmospheric mid-range noise.
+
+293. **[The Tropical Steel Drum Sunset]**
+    - **Style:** `[Soft Island Percussion] [Warm Synth Pads] [Relaxed] [Summer]`
+    - **Structure:** `[Intro: Waves] [Verse: Melodic Steel] [Outro: Fade]`
+    - **Explanation:** A "Lounge" version of tropical music. Focuses on the "Chill" rather than the "Party."
+
+294. **[The Sinister Shadow Realm]**
+    - **Style:** `[Dissonant High-pitched Pads] [Sub-Bass Drones] [Ominous] [Slow]`
+    - **Structure:** `[Intro: Low Hum] [Verse: Rising Dread Swell] [Outro: Static]`
+    - **Explanation:** An exercise in "Anxiety." The clashing pads create melodic "Wrongness" that never resolves.
+
+295. **[The Epic Galactic Voyage]**
+    - **Style:** `[Orchestral + Cosmic Synths] [Large Scale] [Cinematic] [Vast]`
+    - **Structure:** `[Intro: Deep Drone] [Chorus: Grandiose Reveal] [Outro: Faded Star]`
+    - **Explanation:** Designed for high-scale science fiction. Blends the "Human" scale of the orchestra with the "Infinite" scale of synths.
+
+296. **[The Sad Broken Toy Theme]**
+    - **Style:** `[Out-of-tune Music Box] [Pensive Solo Piano] [Fragile] [Melancholic]`
+    - **Structure:** `[Intro: Winding] [Verse: Simple Melody] [Outro: Sudden Stop]`
+    - **Explanation:** Focuses on "Fragility." The "Out-of-tune" tag adds emotional grit to the nostalgia.
+
+297. **[The Aggressive Riot Grind]**
+    - **Style:** `[Maximum Noise Distortion] [Fast Grindcore Drums] [Violent Energy]`
+    - **Structure:** `[Verse: Total Chaos] [Chorus: Wall of Screams] [Outro: Static]`
+    - **Explanation:** Pushes the model toward "Audio Failure." Useful for creating extreme textures for niche genres.
+
+298. **[The Peaceful Underwater Cave]**
+    - **Style:** `[Liquid Sound Effects] [Resonant Low Pads] [Meditative] [Slow]`
+    - **Structure:** `[Intro: Drip] [Verse: Deep Pad Swell] [Outro: Echoes]`
+    - **Explanation:** Focuses on "Resonance." The "Liquid" tag induces aquatic textures that match the harmonic pad.
+
+299. **[The Intense Interrogation Noir]**
+    - **Style:** `[Tense High-pitched Strings] [Occasional Heartbeats] [Slow] [Noir]`
+    - **Structure:** `[Intro: Lone Light Flick] [Verse: Tense Strings] [Outro: Silence]`
+    - **Explanation:** Designed for dialogue background. Focuses on "Anticipation" and rhythmic stress.
+
+300. **[The Ultimate Sonic Blueprint]**
+    - **Style:** `[Complete Professional Synthesis] [Max Fidelity Mastered Style]`
+    - **Structure:** `[The Synthesis of all 7 Pillars into one Masterwork]`
+    - **Explanation:** The final prompt of the library. It acts as a stylistic anchor for the model to produce its highest possible fidelity.
 # Volume 26: The Master Architect – Fully Written Prompt Library (Part 1)
 ## Emerald Sonic Architecture (v5.5)
 
@@ -1751,7 +2624,7 @@ Platforms like TikTok and Instagram loop audio automatically. A professional Son
   - Hook: `I'm the light, I'm the sun, and I've only just begun!`
 - **Template: The "Dark Truth" Melancholy**
   - Style: `[Whispered Indie] [Acoustic Guitar] [Melancholic]`
-  - Hook: `... the world is loud, and i am small ...`
+  - Hook: `  the world is loud, and i am small  `
 - **Template: The "Hype Beast" Phonk**
   - Style: `[Aggressive Phonk] [Deep Bass] [Distorted]`
   - Hook: `Watch me drift, watch me move, I've got nothing left to prove.`
@@ -1965,7 +2838,7 @@ A professional track requires more than just Verse-Chorus. Use these 60 structur
     - 60. The Master Architect (The synthesis of all 7 pillars of output).
 
 ---
-*(Note: These structural logic flows replace physical diagrams by providing the precise technical sequence required for professional output.)*
+
 # Volume 9: Genre Masterclasses – The Sonic Architect’s Deep Dive
 ## Emerald Sonic Architecture (v5.5)
 
@@ -1974,7 +2847,7 @@ In Suno v5.5, EDM is no longer just about a "beat"; it is about "Dynamic Texture
 
 #### 1.1 Engineering the "Drop"
 The most critical part of an EDM track is the transition from the build-up to the drop. Suno often "blurs" this transition if the prompt is too generic.
-- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use `...` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
+- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use ` ` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
 - **Stacking Filters:** Use `[Low-pass Filter Build]` followed by `[High-pass Filter Release]` in the style prompt to simulate a professional DJ transition.
 
 #### 1.2 Sub-Genre Nuances
@@ -2081,7 +2954,7 @@ To create a "Beat-Switch" (popular in modern Hip-Hop):
 3. Suno v5.5 is excellent at maintaining the "Sonic Fiber" of the track while completely shifting the genre and energy.
 
 ### Chapter 3: The "In-Painting" Workflow (Precision Editing)
-*Note: This feature is rolling out to specific regions/users in v5.5.*
+
 
 #### 3.1 Correcting Vocal Glitches
 If a single word is "mumbled" or "hallucinated":
@@ -2108,7 +2981,7 @@ You can use "Directives" inside the lyric field that are not tags but "Probabili
 
 - **Repeating Words:** `the beat, the beat, the beat` forces the AI to focus on rhythmic repetition.
 - **Phonetic Spelling:** Use `eye luv yoo` instead of `I love you` to force a specific vowel inflection or accent.
-- **Spacing:** `I..... love..... you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
+- **Spacing:** `I .. love .. you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
 
 ### Chapter 6: The Elite "Mastering" Chain (Post-Suno)
 To make your Suno output sound "Radio Ready," use this mastering chain in your DAW:
@@ -2130,7 +3003,7 @@ Suno v5.5 treats lyrics not as "words" but as "Rhythmic Information." To control
 
 #### 1.1 The "Staccato" vs. "Legato" Lyric
 - **Staccato (Short, punchy):** `I. Run. Fast. Now.` -> Use single-syllable words and periods to force a robotic or rapid-fire delivery.
-- **Legato (Long, flowing):** `The... beautiful... ocean... is... blue...` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
+- **Legato (Long, flowing):** `The  beautiful  ocean  is  blue ` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
 
 #### 1.2 Syllable Counting (The "Pro-Metric" Rule)
 The secret to a "Radio Ready" hook is a perfectly balanced syllable count.
@@ -2152,7 +3025,7 @@ To give a singer a specific accent (e.g., British, Southern, etc.), you can phon
 You can "stack" punctuation to create complex vocal behaviors.
 
 - `!!??!!` -> Induces a "confused but shouting" vocal delivery.
-- `..... ! .....` -> Induces a long silence, a sudden loud shout, and then another long silence.
+- ` .. !  ..` -> Induces a long silence, a sudden loud shout, and then another long silence.
 - `( ( ( echoing ) ) )` -> Using multiple parentheses can sometimes induce a "triple echo" effect where the AI attempts to repeat the word multiple times.
 
 ### Chapter 4: Hidden "Acoustic" Tags in Lyrics

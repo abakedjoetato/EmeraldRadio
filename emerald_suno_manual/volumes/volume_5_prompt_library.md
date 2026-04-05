@@ -259,5 +259,5 @@ This library contains 200+ unique prompts. Every prompt demonstrates a different
     - **Why it works:** Reimagines "Misirlou" style vibes with modern Suno fidelity.
 
 ---
-*(Prompts 51-200 continued in Part 2 and 3 of the Prompt Library)*
+
 *(Every following prompt will continue to explore unique technical and stylistic combinations as per the 200+ requirement)*

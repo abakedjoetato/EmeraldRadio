@@ -6,7 +6,7 @@ Suno v5.5 treats lyrics not as "words" but as "Rhythmic Information." To control
 
 #### 1.1 The "Staccato" vs. "Legato" Lyric
 - **Staccato (Short, punchy):** `I. Run. Fast. Now.` -> Use single-syllable words and periods to force a robotic or rapid-fire delivery.
-- **Legato (Long, flowing):** `The... beautiful... ocean... is... blue...` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
+- **Legato (Long, flowing):** `The  beautiful  ocean  is  blue ` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
 
 #### 1.2 Syllable Counting (The "Pro-Metric" Rule)
 The secret to a "Radio Ready" hook is a perfectly balanced syllable count.
@@ -28,7 +28,7 @@ To give a singer a specific accent (e.g., British, Southern, etc.), you can phon
 You can "stack" punctuation to create complex vocal behaviors.
 
 - `!!??!!` -> Induces a "confused but shouting" vocal delivery.
-- `..... ! .....` -> Induces a long silence, a sudden loud shout, and then another long silence.
+- ` .. !  ..` -> Induces a long silence, a sudden loud shout, and then another long silence.
 - `( ( ( echoing ) ) )` -> Using multiple parentheses can sometimes induce a "triple echo" effect where the AI attempts to repeat the word multiple times.
 
 ### Chapter 4: Hidden "Acoustic" Tags in Lyrics
