@@ -1,6 +1,17 @@
 # Volume 1: The Foundations of AI Music & The Suno Ecosystem
 ## Emerald Sonic Architecture (v5.5)
 
+---
+**LICENSE NOTICE**
+
+Licensed to a single purchaser only.
+
+Each copy of this document contains unique
+identification markers tied to the buyer.
+Unauthorized distribution may result in
+license termination and legal action.
+---
+
 ### Chapter 1: Introduction to the Sonic Architect
 The professional AI music industry has transitioned from "simple generation" to "sonic architecture." In this course, you will not just "prompt" Suno; you will design audio systems. We are moving beyond the era of "happy accidents" and entering the era of "deterministic creation."
 
