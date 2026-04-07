@@ -16,19 +16,21 @@ const html = `
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap');
 
         :root {
-            --emerald: #00D084;
-            --gold: #F59E0B; /* More vibrant gold for better contrast */
-            --dark-bg: #0F172A;
-            --text-light: #F1F5F9;
-            --accent-green: #34D399;
-            --card-bg: #1E293B;
+            --emerald: #059669; /* Slightly deeper emerald for white background */
+            --gold: #B45309; /* Deeper gold for contrast */
+            --bg-light: #FFFFFF;
+            --text-dark: #1E293B;
+            --accent-green: #10B981;
+            --code-bg: #ECFDF5;
+            --pre-bg: #F8FAFC;
+            --hero-bg: #0F172A;
         }
 
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.7;
-            color: var(--text-light);
-            background-color: var(--dark-bg);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
             margin: 0;
             padding: 0;
             font-size: 16px;
@@ -67,20 +69,20 @@ const html = `
         h3 {
             font-size: 1.6em;
             color: var(--accent-green);
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px solid #E2E8F0;
             padding-bottom: 10px;
         }
 
         p, li {
             font-size: 1.15em;
             margin-bottom: 1.2em;
-            color: #CBD5E1;
+            color: #334155;
         }
 
         /* Highlighted text readability */
         strong {
-            color: #FFFFFF;
-            background-color: rgba(0, 208, 132, 0.15);
+            color: #064E3B;
+            background-color: rgba(16, 185, 129, 0.1);
             padding: 0 4px;
             border-radius: 2px;
             font-weight: 600;
@@ -88,29 +90,28 @@ const html = `
 
         /* Tags and Code Blocks */
         code {
-            background-color: #020617;
+            background-color: var(--code-bg);
             padding: 3px 8px;
-            border-radius: 6px;
+            border-radius: 4px;
             font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-            color: #10B981; /* Brighter emerald for small text */
-            font-size: 0.95em;
-            border: 1px solid #334155;
+            color: #065F46;
+            font-size: 0.9em;
+            border: 1px solid #A7F3D0;
         }
 
         pre {
-            background-color: #020617;
+            background-color: var(--pre-bg);
             padding: 24px;
-            border-radius: 12px;
+            border-radius: 8px;
             overflow-x: auto;
-            border: 1px solid var(--gold);
+            border: 1px solid #E2E8F0;
             margin: 2em 0;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
         }
 
         pre code {
             padding: 0;
             background-color: transparent;
-            color: #F8FAFC;
+            color: #1E293B;
             border: none;
             line-height: 1.5;
         }
@@ -134,49 +135,35 @@ const html = `
         blockquote {
             border-left: 4px solid var(--gold);
             margin: 2em 0;
-            padding: 1em 2em;
-            background-color: #1E293B;
+            padding: 1.5em 2em;
+            background-color: #FDFCFB;
             font-style: italic;
             border-radius: 0 8px 8px 0;
+            color: #475569;
+            border-top: 1px solid #F1F5F9;
+            border-right: 1px solid #F1F5F9;
+            border-bottom: 1px solid #F1F5F9;
         }
 
         /* PDF Optimization */
         @media print {
             body {
                 background-color: white;
-                color: #0F172A;
+                color: #000000;
             }
             .container {
                 max-width: 100%;
                 padding: 0;
             }
-            h1, h2, h3 {
-                page-break-after: avoid;
-            }
-            pre {
+            pre, blockquote {
                 page-break-inside: avoid;
-                border: 2px solid #000;
-                background-color: #f8fafc;
-                color: #000;
             }
-            code {
-                color: #065F46;
-                background-color: #f1f5f9;
-                border: 1px solid #cbd5e1;
-            }
-            strong {
-                color: #000;
-                background-color: #ecfdf5;
-            }
-            h1 { color: #065F46; border-bottom-color: #B45309; }
-            h2 { color: #B45309; border-left-color: #065F46; }
-            h3 { color: #047857; }
         }
 
         .hero {
             text-align: center;
             padding: 120px 20px;
-            background: radial-gradient(circle at top, #064E3B 0%, #0F172A 100%);
+            background: radial-gradient(circle at top, #064E3B 0%, var(--hero-bg) 100%);
             margin-bottom: 0;
             border-bottom: 8px solid var(--gold);
         }
