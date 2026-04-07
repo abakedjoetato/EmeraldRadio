@@ -48,7 +48,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Periods ( . ):** Induce a longer pause and a definitive "cadence" or drop in pitch. It signals the completion of a musical thought.
 - **Exclamation Marks ( ! ):** Increase vocal intensity, "attack," and often triggers a "chest voice" performance rather than a "head voice."
 - **Question Marks ( ? ):** Induce an upward "inflection" or "rising tone" at the end of the line. Essential for emotional delivery in ballads.
-- **Ellipses ( ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
+- **Ellipses ( ... ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
 - **Dashes ( - ):** Can be used to "stretch" a syllable or indicate a sudden interruption in the vocal flow.
 - **Line Breaks (Enter):** Represent natural phrasing breaks. Excessive line breaks can lead to a "choppy" performance, while no line breaks can lead to "rushed" vocals.
 
@@ -59,7 +59,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Emphasized:** "I LOVE the way you MOVE." (The AI will stress the capitalized words, often hitting them harder on the downbeat).
 - **Extreme (SHOUTING):** "I LOVE THE WAY YOU MOVE!" (Can trigger a transition from singing to shouting or "belted" vocals).
 
-**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `"i, think, i, love, you"`. Combine this with the style tag `[Whispered Vocals]`.
+**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `... i, think, i, love, you ...`. Combine this with the style tag `[Whispered Vocals]`.
 
 ### Chapter 3: Advanced Structure Forcing (The Bracket System)
 Brackets `[ ]` are the command line of Suno. They do not appear in the song; they tell the "Arranger" what to do next. They are the "Director's Cues" in your sonic film.

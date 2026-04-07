@@ -61,7 +61,7 @@ You can use "Directives" inside the lyric field that are not tags but "Probabili
 
 - **Repeating Words:** `the beat, the beat, the beat` forces the AI to focus on rhythmic repetition.
 - **Phonetic Spelling:** Use `eye luv yoo` instead of `I love you` to force a specific vowel inflection or accent.
-- **Spacing:** `I .. love .. you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
+- **Spacing:** `I..... love..... you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
 
 ### Chapter 6: The Elite "Mastering" Chain (Post-Suno)
 To make your Suno output sound "Radio Ready," use this mastering chain in your DAW:

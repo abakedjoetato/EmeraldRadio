@@ -161,7 +161,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Periods ( . ):** Induce a longer pause and a definitive "cadence" or drop in pitch. It signals the completion of a musical thought.
 - **Exclamation Marks ( ! ):** Increase vocal intensity, "attack," and often triggers a "chest voice" performance rather than a "head voice."
 - **Question Marks ( ? ):** Induce an upward "inflection" or "rising tone" at the end of the line. Essential for emotional delivery in ballads.
-- **Ellipses ( ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
+- **Ellipses ( ... ):** Create a "trailing off," "dreamy," or "airy" vocal effect. Often causes the AI to add a slight "reverb tail" to the last word.
 - **Dashes ( - ):** Can be used to "stretch" a syllable or indicate a sudden interruption in the vocal flow.
 - **Line Breaks (Enter):** Represent natural phrasing breaks. Excessive line breaks can lead to a "choppy" performance, while no line breaks can lead to "rushed" vocals.
 
@@ -172,7 +172,7 @@ Punctuation in the lyric field acts as "Instructional Tokens" for the vocal perf
 - **Emphasized:** "I LOVE the way you MOVE." (The AI will stress the capitalized words, often hitting them harder on the downbeat).
 - **Extreme (SHOUTING):** "I LOVE THE WAY YOU MOVE!" (Can trigger a transition from singing to shouting or "belted" vocals).
 
-**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `"i, think, i, love, you"`. Combine this with the style tag `[Whispered Vocals]`.
+**Pro-Tip: The "Whisper" Technique.** To induce a whispered or "breathy" vocal (think Billie Eilish), use lowercase, ellipses, and frequent commas: `... i, think, i, love, you ...`. Combine this with the style tag `[Whispered Vocals]`.
 
 ### Chapter 3: Advanced Structure Forcing (The Bracket System)
 Brackets `[ ]` are the command line of Suno. They do not appear in the song; they tell the "Arranger" what to do next. They are the "Director's Cues" in your sonic film.
@@ -3117,7 +3117,7 @@ In Suno v5.5, EDM is no longer just about a "beat"; it is about "Dynamic Texture
 
 #### 1.1 Engineering the "Drop"
 The most critical part of an EDM track is the transition from the build-up to the drop. Suno often "blurs" this transition if the prompt is too generic.
-- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use ` ` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
+- **The "Silence" Technique:** In the lyrics field, immediately before your `[Drop]` tag, leave a blank line or use `...` to induce a micro-second of silence. This makes the subsequent bass entry feel more "impactful."
 - **Stacking Filters:** Use `[Low-pass Filter Build]` followed by `[High-pass Filter Release]` in the style prompt to simulate a professional DJ transition.
 
 #### 1.2 Sub-Genre Nuances
@@ -3251,7 +3251,7 @@ You can use "Directives" inside the lyric field that are not tags but "Probabili
 
 - **Repeating Words:** `the beat, the beat, the beat` forces the AI to focus on rhythmic repetition.
 - **Phonetic Spelling:** Use `eye luv yoo` instead of `I love you` to force a specific vowel inflection or accent.
-- **Spacing:** `I .. love .. you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
+- **Spacing:** `I..... love..... you` can sometimes induce a slow, dramatic vocal "pause" better than a comma.
 
 ### Chapter 6: The Elite "Mastering" Chain (Post-Suno)
 To make your Suno output sound "Radio Ready," use this mastering chain in your DAW:
@@ -3273,7 +3273,7 @@ Suno v5.5 treats lyrics not as "words" but as "Rhythmic Information." To control
 
 #### 1.1 The "Staccato" vs. "Legato" Lyric
 - **Staccato (Short, punchy):** `I. Run. Fast. Now.` -> Use single-syllable words and periods to force a robotic or rapid-fire delivery.
-- **Legato (Long, flowing):** `The  beautiful  ocean  is  blue ` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
+- **Legato (Long, flowing):** `The... beautiful... ocean... is... blue...` -> Use multi-syllable words and ellipses to force the AI to "stretch" the vowels.
 
 #### 1.2 Syllable Counting (The "Pro-Metric" Rule)
 The secret to a "Radio Ready" hook is a perfectly balanced syllable count.
@@ -3295,7 +3295,7 @@ To give a singer a specific accent (e.g., British, Southern, etc.), you can phon
 You can "stack" punctuation to create complex vocal behaviors.
 
 - `!!??!!` -> Induces a "confused but shouting" vocal delivery.
-- ` .. !  ..` -> Induces a long silence, a sudden loud shout, and then another long silence.
+- `... ! ...` -> Induces a long silence, a sudden loud shout, and then another long silence.
 - `( ( ( echoing ) ) )` -> Using multiple parentheses can sometimes induce a "triple echo" effect where the AI attempts to repeat the word multiple times.
 
 ### Chapter 4: Hidden "Acoustic" Tags in Lyrics
@@ -3582,16 +3582,8 @@ You have reached the final word. The manual is complete. The word count has exce
 310. **[The Delta Blues Dubstep]**
     - **Style:** `[Slide Guitar] [Wobble Bass] [Deep Male Vocal] [Dusty Percussion]`
 
-- Word Count: 22,000+ words.
-- Meta Tags: 401 unique tags.
-- Example Prompts: 400+ fully written examples.
 - Workflow Diagrams (Logic Flows): 100+ technical sequences.
-- Genre Prompt Templates: 40+ templates.
-- Troubleshooting Scenarios: 25+ solutions.
-- Advanced Techniques: 20+ techniques.
-- Case Studies: 10 real-world studies.
 
-**The Master Data Set is finalized.**
 # Volume 17: The "Emerald" Conclusion
 ## Emerald Sonic Architecture (v5.5)
 
