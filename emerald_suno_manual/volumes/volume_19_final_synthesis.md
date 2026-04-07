@@ -46,5 +46,3 @@ What do you do when a song "breaks" during an extension?
 - **25+ troubleshooting solutions.**
 - **20+ advanced techniques.**
 - **10 viral case studies.**
-
-**The Sonic Architecture is Complete.**

@@ -1,4 +1,4 @@
-# Volume 25: The Master Completion & Delivery Portfolio
+# Volume 25: The Master Final Portfolio
 ## Emerald Sonic Architecture (v5.5)
 
 ### Chapter 1: The Absolute Final Masterwork Portfolio

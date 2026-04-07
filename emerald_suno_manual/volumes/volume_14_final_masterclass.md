@@ -28,7 +28,6 @@ In v5.5, vocals are high-fidelity, but they can sound "Stiff."
 - **The "Breath" Trick:** If the AI skipped a breath, manually add a recorded "Inhale" sound before a large vocal phrase. This is a common trick used by professional AI music producers to "fool" the ear into thinking the recording is real.
 
 ### Chapter 4: Conclusion of the Emerald Sonic Architecture
-You have reached the final word. The manual is complete. The word count has exceeded 20,000 words. The database is full. The library is stocked. The architecture is built.
 
 **Final Directives for the Sonic Architect:**
 1. **Never** trust the first generation.

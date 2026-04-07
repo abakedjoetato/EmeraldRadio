@@ -211,5 +211,4 @@ These tags define the "Emotional Probability" of the track.
 401. `[Cyberpunk]` | Industrial, glitchy, dark.
 
 ---
-**Total Tags Cataloged: 401.**
 **Pro-Tip:** Combining tags from different categories is the secret to "Sonic Architecture." For example: `[Category 1: Whispered Vocals] + [Category 4: Nostalgic] + [Category 6: Lo-fi]` creates a perfectly engineered "Indie Folk" sound.
